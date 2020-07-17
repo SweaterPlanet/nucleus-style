@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "docz": "docz dev",
+    "docz:build": "docz build",
+    "docz:serve": "docz build && docz serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,5 +28,8 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "docz": "^2.3.1"
   }
 }
