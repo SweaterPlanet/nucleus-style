@@ -1,4 +1,4 @@
-// Components
+// Typography
 export {default as Heading20} from './components/Heading20'
 export {default as Heading23} from './components/Heading23'
 export {default as Heading25} from './components/Heading25'
@@ -10,3 +10,4 @@ export {default as Heading50} from './components/Heading50'
 export {default as Heading65} from './components/Heading68'
 export {default as Heading68} from './components/Heading68'
 export {default as Heading80} from './components/Heading80'
+export {default as Text} from './components/Text'
