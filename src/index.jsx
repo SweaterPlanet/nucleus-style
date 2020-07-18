@@ -1,4 +1,5 @@
 // Components
+export {default as Heading35} from './components/Heading38'
 export {default as Heading38} from './components/Heading38'
 export {default as Heading40} from './components/Heading40'
 export {default as Heading50} from './components/Heading50'
