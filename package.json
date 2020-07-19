@@ -1,12 +1,14 @@
 {
   "name": "nucleus-style",
   "version": "1.0.0",
-  "description": "",
+  "description": "React component library for The Sweater Guys",
   "main": "index.js",
   "scripts": {
     "docz": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
+    "format": "prettier --write \"**/*.{js,jsx,md,mdx}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,md,mdx}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,11 +27,12 @@
     "react-dom": "^16.13.1",
     "styled-components": "^5.1.1"
   },
+  "devDependencies": {
+    "docz": "^2.3.1",
+    "prettier": "^2.0.5"
+  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
-  },
-  "devDependencies": {
-    "docz": "^2.3.1"
   }
 }
