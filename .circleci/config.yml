@@ -10,7 +10,5 @@ jobs:
 
 workflows:
   format:
-    docker:
-      - image: circleci/node:10
     jobs:
       - format-check
