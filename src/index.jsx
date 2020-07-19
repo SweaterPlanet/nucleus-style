@@ -1,5 +1,6 @@
 // Buttons
 export {default as Button} from './components/Button'
+export {default as ButtonMaxWidth} from './components/ButtonMaxWidth'
 
 // Typography
 export {default as Heading20} from './components/Heading20'
