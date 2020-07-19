@@ -1,10 +1,5 @@
 version: 2.1
 
-executors:
-  node-executor:
-    docker:
-      - image: circleci/node:10
-
 jobs:
   format-check:
     docker:
