@@ -1,3 +1,3 @@
 export default {
-  files: "**/*.{md,mdx}",
-};
+  files: '**/*.{md,mdx}',
+}
