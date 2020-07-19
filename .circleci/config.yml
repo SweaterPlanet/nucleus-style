@@ -1,0 +1,12 @@
+version: 2.1
+
+jobs:
+  format:
+    steps:
+      - checkout
+      - run: format
+
+workflows:
+  format:
+    jobs:
+      - format
