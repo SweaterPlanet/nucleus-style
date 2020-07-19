@@ -12,9 +12,9 @@ const ButtonMaxWidth = styled.button`
   border-radius: 10px;
   padding: 14px 0;
   width: 100%;
-  color: ${(props) => props.color};
-  opacity: ${(props) => props.opacity || 1};
-  background-color: ${(props) => props.bg};
+  color: ${props => props.color};
+  opacity: ${props => props.opacity || 1};
+  background-color: ${props => props.bg};
   cursor: pointer;
 `
 

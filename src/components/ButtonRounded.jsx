@@ -11,9 +11,9 @@ const ButtonRounded = styled.button`
   border: none;
   border-radius: 20px;
   padding: 12px 38px;
-  color: ${(props) => props.color};
-  opacity: ${(props) => props.opacity || 1};
-  background-color: ${(props) => props.bg};
+  color: ${props => props.color};
+  opacity: ${props => props.opacity || 1};
+  background-color: ${props => props.bg};
   cursor: pointer;
 `
 

@@ -11,9 +11,9 @@ const Button = styled.button`
   border: none;
   border-radius: 8px;
   padding: 14px 38px;
-  color: ${(props) => props.color};
-  opacity: ${(props) => props.opacity || 1};
-  background-color: ${(props) => props.bg};
+  color: ${props => props.color};
+  opacity: ${props => props.opacity || 1};
+  background-color: ${props => props.bg};
   cursor: pointer;
 `
 
