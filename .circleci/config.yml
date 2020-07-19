@@ -4,7 +4,7 @@ orbs:
   node: circleci/node@3.0.1
 
 jobs:
-  format-check:
+  format:
     executor:
       name: node/default
     steps:
@@ -14,8 +14,3 @@ jobs:
           override-ci-command: npm install
       - run:
           command: npm run format:check
-
-workflows:
-  format:
-    jobs:
-      - format-check
