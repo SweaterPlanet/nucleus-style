@@ -1,12 +1,18 @@
 version: 2.1
 
+orbs:
+  node: 'circleci/node:x.y'
+
 jobs:
   format-check:
-    docker:
-      - image: circleci/node:10
+    executor:
+      name: node/default
+      tag: '13'
     steps:
       - checkout
-      - run: format:check
+      - node/install-packages
+      - run:
+          command: npm run format:check
 
 workflows:
   format:
