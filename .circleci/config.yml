@@ -14,3 +14,8 @@ jobs:
           override-ci-command: npm install
       - run:
           command: npm run format:check
+
+workflows:	
+  format:	
+    jobs:	
+      - format
