@@ -7,10 +7,11 @@ jobs:
   format-check:
     executor:
       name: node/default
-      tag: '13'
     steps:
       - checkout
-      - node/install-packages
+      - node/install-packages:
+          cache-path: ~/project/node_modules
+          override-ci-command: npm install
       - run:
           command: npm run format:check
 
