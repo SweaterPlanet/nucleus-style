@@ -7,6 +7,8 @@
     "docz": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
+    "format": "prettier --write \"**/*.{js,jsx,md,mdx}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,md,mdx}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
