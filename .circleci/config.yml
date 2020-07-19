@@ -15,7 +15,7 @@ jobs:
       - run:
           command: npm run format:check
 
-workflows:	
+workflows:
   format:	
     jobs:	
       - format
