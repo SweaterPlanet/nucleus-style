@@ -12,7 +12,7 @@ const Button = styled.button`
   padding: 14px 38px;
   color: ${props => props.color};
   opacity: ${props => props.opacity || 1};
-  background-color: ${props => props.bc};
+  background-color: ${props => props.bg};
   cursor: pointer;
 `
 
