@@ -8,7 +8,7 @@ const ButtonMaxWidth = styled.button`
 
   /* button styles */
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 14px 0;
   width: 100%;
   color: ${props => props.color};
