@@ -1,12 +1,21 @@
 version: 2.1
 
+executors:
+  node-executor:
+    docker:
+      - image: circleci/node:10
+
 jobs:
   format-check:
+    docker:
+      - image: circleci/node:10
     steps:
       - checkout
       - run: format:check
 
 workflows:
   format:
+    docker:
+      - image: circleci/node:10
     jobs:
       - format-check
