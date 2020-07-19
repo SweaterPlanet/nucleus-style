@@ -1,3 +1,6 @@
+// Buttons
+export {default as Button} from './components/Button'
+
 // Typography
 export {default as Heading20} from './components/Heading20'
 export {default as Heading23} from './components/Heading23'
