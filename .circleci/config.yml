@@ -1,12 +1,12 @@
 version: 2.1
 
 jobs:
-  format:
+  format-check:
     steps:
       - checkout
-      - run: format
+      - run: format:check
 
 workflows:
   format:
     jobs:
-      - format
+      - format-check
