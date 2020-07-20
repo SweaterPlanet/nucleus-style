@@ -16,6 +16,6 @@ jobs:
           command: npm run format:check
 
 workflows:
-  format:	
-    jobs:	
+  format:
+    jobs:
       - format
