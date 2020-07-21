@@ -1,6 +1,6 @@
 {
-  "name": "nucleus-style",
-  "version": "1.0.0",
+  "name": "@thesweaterguys/nucleus-style",
+  "version": "0.1.0",
   "description": "React component library for The Sweater Guys",
   "main": "index.js",
   "scripts": {
@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sweaterguys/nucleus-style.git"
+    "url": "git+https://github.com/TheSweaterGuys/nucleus-style.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sweaterguys/nucleus-style/issues"
+    "url": "https://github.com/TheSweaterGuys/nucleus-style/issues"
   },
-  "homepage": "https://github.com/sweaterguys/nucleus-style#readme",
+  "homepage": "https://github.com/TheSweaterGuys/nucleus-style#readme",
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -41,5 +41,8 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
