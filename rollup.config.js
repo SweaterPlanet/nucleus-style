@@ -4,25 +4,16 @@ import filesize from 'rollup-plugin-filesize'
 
 import pkg from './package.json'
 
-const INPUT_FILE_PATH = 'src/index.js'
-
-const GLOBALS = {
-  react: 'React',
-  'react-dom': 'ReactDOM',
-  'prop-types': 'PropTypes',
-}
-
 const PLUGINS = [
   resolve({
-    resolveOnly: [/^(?!react$)/, /^(?!react-dom$)/, /^(?!prop-types)/],
+    extensions: ['.js', '.jsx'],
+    resolveOnly: [/^(?!react$)/, /^(?!react-dom$)/, /^(?!styled-components)/],
   }),
   commonjs(),
   filesize(),
 ]
 
-const EXTERNAL = ['react', 'react-dom', 'prop-types']
-
-const OUTPUT_DATA = [
+const OUTPUT = [
   {
     file: pkg.browser,
     format: 'umd',
@@ -37,14 +28,20 @@ const OUTPUT_DATA = [
   },
 ]
 
-const config = OUTPUT_DATA.map(({ file, format }) => ({
-  input: INPUT_FILE_PATH,
+const config = OUTPUT.map(({ file, format }) => ({
+  input: 'src/index.js',
   output: {
+    dir: './dist',
     file,
     format,
-    globals: GLOBALS,
+    name: 'nucleus-style',
+    globals: {
+      react: 'React',
+      'react-dom': 'ReactDOM',
+      'styled-components': 'styled',
+    },
   },
-  external: EXTERNAL,
+  external: ['react', 'react-dom', 'styled-components'],
   plugins: PLUGINS,
 }))
 
