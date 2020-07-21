@@ -12,7 +12,7 @@ jobs:
         run: npm install
 
       - name: Format
-        run: npm run format-check
+        run: npm run format:check
       
       - name: Build with Rollup
         run: npm run build
