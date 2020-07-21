@@ -14,7 +14,6 @@ const GLOBALS = {
 
 const PLUGINS = [
   resolve({
-    browser: true,
     resolveOnly: [/^(?!react$)/, /^(?!react-dom$)/, /^(?!prop-types)/],
   }),
   commonjs(),
