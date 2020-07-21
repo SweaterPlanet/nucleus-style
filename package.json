@@ -10,6 +10,7 @@
     "docz:serve": "docz build && docz serve",
     "format": "prettier --write \"**/*.{js,jsx,md,mdx}\"",
     "format:check": "prettier --check \"**/*.{js,jsx,md,mdx}\"",
+    "release": "standard-version",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -34,7 +35,8 @@
     "docz": "^2.3.1",
     "prettier": "^2.0.5",
     "rollup": "^2.22.1",
-    "rollup-plugin-filesize": "^9.0.2"
+    "rollup-plugin-filesize": "^9.0.2",
+    "standard-version": "^8.0.2"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
