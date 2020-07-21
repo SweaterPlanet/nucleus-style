@@ -3,6 +3,9 @@ export { default as Button } from './components/Button'
 export { default as ButtonMaxWidth } from './components/ButtonMaxWidth'
 export { default as ButtonRounded } from './components/ButtonRounded'
 
+// Links
+export { default as Link } from './components/Link'
+
 // Typography
 export { default as Heading20 } from './components/Heading20'
 export { default as Heading23 } from './components/Heading23'
