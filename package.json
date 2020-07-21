@@ -4,6 +4,7 @@
   "description": "React component library for The Sweater Guys",
   "main": "index.js",
   "scripts": {
+    "build": "rollup -c",
     "docz": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
@@ -28,8 +29,12 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
     "docz": "^2.3.1",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "rollup": "^2.22.1",
+    "rollup-plugin-filesize": "^9.0.2"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
