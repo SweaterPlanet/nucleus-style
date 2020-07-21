@@ -2,9 +2,9 @@ import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import filesize from 'rollup-plugin-filesize'
 
-import pkg from './package.json'
+const formats = ['cjs', 'esm', 'umd']
 
-const PLUGINS = [
+const plugins = [
   resolve({
     extensions: ['.js', '.jsx'],
     resolveOnly: [/^(?!react$)/, /^(?!react-dom$)/, /^(?!styled-components)/],
@@ -13,36 +13,21 @@ const PLUGINS = [
   filesize(),
 ]
 
-const OUTPUT = [
+export default [
   {
-    file: pkg.browser,
-    format: 'umd',
-  },
-  {
-    file: pkg.main,
-    format: 'cjs',
-  },
-  {
-    file: pkg.module,
-    format: 'es',
+    input: 'src/index.js',
+    external: ['react', 'react-dom', 'styled-components'],
+    output: formats.map(format => ({
+      file: `./dist/index.${format}.js`,
+      format,
+      sourcemap: true,
+      name: 'nucleus-style',
+      globals: {
+        react: 'React',
+        'react-dom': 'ReactDOM',
+        'styled-components': 'styled',
+      },
+    })),
+    plugins,
   },
 ]
-
-const config = OUTPUT.map(({ file, format }) => ({
-  input: 'src/index.js',
-  output: {
-    dir: './dist',
-    file,
-    format,
-    name: 'nucleus-style',
-    globals: {
-      react: 'React',
-      'react-dom': 'ReactDOM',
-      'styled-components': 'styled',
-    },
-  },
-  external: ['react', 'react-dom', 'styled-components'],
-  plugins: PLUGINS,
-}))
-
-export default config
