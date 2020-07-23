@@ -10,6 +10,7 @@
     "docz:serve": "docz build && docz serve",
     "format": "prettier --write \"**/*.{js,jsx,md,mdx}\"",
     "format:check": "prettier --check \"**/*.{js,jsx,md,mdx}\"",
+    "lint": "eslint \"**/*.{js,jsx}\" && echo 'Lint complete.'",
     "release": "standard-version",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
