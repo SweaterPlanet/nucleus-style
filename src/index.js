@@ -3,6 +3,9 @@ export { default as Button } from './components/Button'
 export { default as ButtonMaxWidth } from './components/ButtonMaxWidth'
 export { default as ButtonRounded } from './components/ButtonRounded'
 
+// Forms
+export { default as FormInput } from './components/FormInput'
+
 // Links
 export { default as Link } from './components/Link'
 export { default as LinkButton } from './components/LinkButton'
