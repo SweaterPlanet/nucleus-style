@@ -7,6 +7,9 @@ export { default as ButtonRounded } from './components/ButtonRounded'
 export { default as Link } from './components/Link'
 export { default as LinkButton } from './components/LinkButton'
 
+// Tag
+export { default as Tag } from './components/Tag'
+
 // Typography
 export { default as Heading20 } from './components/Heading20'
 export { default as Heading23 } from './components/Heading23'
