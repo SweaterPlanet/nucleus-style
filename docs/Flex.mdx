@@ -4,12 +4,17 @@ route: /flex
 ---
 
 import { Playground } from 'docz'
-import { Flex } from '../src'
+import { Box, Flex } from '../src'
 
 # Flex
 
 <Playground>
-  <Flex w="20%" h="80%" p="40px" color="#ffffff" bg="#000000">
-    Flex
+  <Flex flexWrap="wrap">
+    <Box w="50%" p="40px" color="#ffffff" bg="#000000">
+      Box
+    </Box>
+    <Box w="50%" p="40px" color="#ffffff" bg="#54A2D4">
+      Box
+    </Box>
   </Flex>
 </Playground>
