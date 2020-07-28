@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Box from './Box'
-import Heading30 from './Heading30'
+import Heading65 from './Heading65'
 
 const StyledAvatar = styled(Box)`
   border-radius: 50%;
@@ -24,7 +24,7 @@ function Avatar(props) {
   return (
     <StyledAvatar {...props} width={size} height={size}>
       <TextBox width={size}>
-        <Heading30 color={color}>{initials}</Heading30>
+        <Heading65 color={color}>{initials}</Heading65>
       </TextBox>
     </StyledAvatar>
   )
