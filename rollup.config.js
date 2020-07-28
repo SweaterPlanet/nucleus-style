@@ -29,16 +29,6 @@ export default {
         'styled-components': 'styled',
       },
     },
-    {
-      file: pkg.browser,
-      format: 'umd',
-      name: 'nucleus-style',
-      globals: {
-        react: 'React',
-        'react-dom': 'ReactDOM',
-        'styled-components': 'styled',
-      },
-    },
   ],
   external: [
     ...Object.keys(pkg.dependencies || {}),
