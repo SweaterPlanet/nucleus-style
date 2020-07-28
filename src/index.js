@@ -1,5 +1,6 @@
 export { default as Avatar } from './components/Avatar'
 export { default as Box } from './components/Box'
+export { default as Card } from './components/Card'
 export { default as Flex } from './components/Flex'
 export { default as Tag } from './components/Tag'
 
