@@ -4,6 +4,7 @@
   "description": "React component library for The Sweater Guys",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
+  "browser": "dist/index.umd.js",
   "scripts": {
     "build": "rollup -c",
     "docz": "docz dev",
