@@ -1,9 +1,10 @@
 {
   "name": "@thesweaterguys/nucleus-style",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "React component library for The Sweater Guys",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
+  "browser": "dist/index.umd.js",
   "scripts": {
     "build": "rollup -c",
     "docz": "docz dev",
@@ -35,6 +36,8 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.10.4",
+    "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "docz": "^2.3.1",
