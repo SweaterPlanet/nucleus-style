@@ -1,4 +1,4 @@
 export default {
   files: '**/*.{md,mdx}',
-  ignore: ['CHANGELOG.md', 'README.md'],
+  ignore: ['CHANGELOG.md', 'CONTRIBUTING.md', 'README.md'],
 }
