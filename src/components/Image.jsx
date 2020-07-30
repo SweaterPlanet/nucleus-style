@@ -5,20 +5,20 @@ const StyledImage = styled(Box)`
   border-radius: 0;
 
   ${props =>
-    props.rounded &&
-    css`
-      border-radius: 8px;
-    `}
-
-  ${props =>
     props.circle &&
     css`
       border-radius: 50%;
     `}
+
+  ${props =>
+    props.rounded &&
+    css`
+      border-radius: 8px;
+    `}
 `
 
-const Image = ({ src, size, ...props }) => (
-  <StyledImage as="img" src={src} width={size} height={size} {...props} />
+const Image = ({ size, src, ...props }) => (
+  <StyledImage as="img" width={size} height={size} src={src} {...props} />
 )
 
 export default Image
