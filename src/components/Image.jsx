@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
-import Button from './Button'
+import Box from './Box'
 
-const StyledImage = styled(Button)`
+const StyledImage = styled(Box)`
   border-radius: 0;
 
   ${props =>
@@ -14,13 +14,11 @@ const StyledImage = styled(Button)`
     props.circle &&
     css`
       border-radius: 50%;
-      width: ${props => props.size};
-      height: ${props => props.size};
     `}
 `
 
-const Image = ({ src, ...props }) => (
-  <StyledImage as="img" src={src} {...props} />
+const Image = ({ src, size, ...props }) => (
+  <StyledImage as="img" src={src} width={size} height={size} {...props} />
 )
 
 export default Image
