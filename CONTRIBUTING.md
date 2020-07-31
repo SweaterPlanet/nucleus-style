@@ -37,6 +37,7 @@ Here are accepted types so far (that have also been configured for CHANGELOG aut
 - docs: changes to documentation
 - feat: new features
 - fix: bug fixes
+- perf: changes that improve performance
 - style: style updates, changes that don't affect code
 - test: changes to tests
 
