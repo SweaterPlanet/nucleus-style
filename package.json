@@ -29,8 +29,6 @@
   },
   "homepage": "https://github.com/TheSweaterGuys/nucleus-style#readme",
   "dependencies": {
-    "cache": "^2.3.1",
-    "clean": "^4.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.1.1"
