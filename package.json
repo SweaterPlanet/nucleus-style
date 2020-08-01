@@ -40,6 +40,7 @@
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@storybook/react": "^5.3.19",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.11.0",
