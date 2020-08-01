@@ -1,7 +1,7 @@
 // Color palette
 import { default as colors } from './colors'
 
-// Font families
+// Fonts
 import { default as fonts } from './fonts'
 
 // Screen breakpoints
