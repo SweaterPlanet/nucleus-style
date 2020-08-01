@@ -2,7 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.1] (2020-08-01)
+
+
+### ✨ Improvements
+
+* add fonts theming ([5456304](https://github.com/TheSweaterGuys/nucleus-style/commit/545630427cc33ae595729545615ea71d1e77cdb8))
+* add colors and screens theming ([#40](https://github.com/TheSweaterGuys/nucleus-style/issues/40)) ([8e1ab2c](https://github.com/TheSweaterGuys/nucleus-style/commit/8e1ab2c5ecb117d003e5de074e1e9ec614e448be))
+* switch docs generator from docz to storybook ([#43](https://github.com/TheSweaterGuys/nucleus-style/issues/43)) ([bf50ea9](https://github.com/TheSweaterGuys/nucleus-style/commit/bf50ea9902b975421daad343907377573384e6b3))
+
+
 ## [0.4.0] (2020-07-31)
+
 
 ### 🚀 Features
 
@@ -13,7 +24,7 @@ All notable changes to this project will be documented in this file. See [standa
 * add contributing guide ([#37](https://github.com/TheSweaterGuys/nucleus-style/issues/37)) ([e64d983](https://github.com/TheSweaterGuys/nucleus-style/commit/e64d9834fbde00bb8f302b2a666e418ce38a82d7))
 
 
-### [0.3.0] (2020-07-29)
+## [0.3.0] (2020-07-29)
 
 
 ### 🚀 Features
