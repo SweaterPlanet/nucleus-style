@@ -4,7 +4,7 @@ import theme from '../../../theme'
 
 const H1 = styled.h1`
   font-family: ${theme.fonts.header};
-  font-size: 35px;
+  font-size: ${theme.fontSizes.h1.xs};
   font-weight: 600;
   opacity: ${props => props.opacity};
 
@@ -64,19 +64,19 @@ const H1 = styled.h1`
     `} 
 
   @media (min-width: ${theme.screens.sm}) {
-    font-size: 40px;
+    font-size: ${theme.fontSizes.h1.sm};
   }
 
   @media (min-width: ${theme.screens.md}) {
-    font-size: 50px;
+    font-size: ${theme.fontSizes.h1.md};
   }
 
   @media (min-width: ${theme.screens.lg}) {
-    font-size: 65px;
+    font-size: ${theme.fontSizes.h1.lg};
   }
 
   @media (min-width: ${theme.screens.xl}) {
-    font-size: 80px;
+    font-size: ${theme.fontSizes.h1.xl};
   }
 `
 

@@ -5,7 +5,7 @@ import theme from '../../theme'
 
 const StyledText = styled.p`
   font-family: ${theme.fonts.body};
-  font-size: 12px;
+  font-size: ${theme.fontSizes.p.xs};
   font-weight: ${props => (props.bold ? 600 : 400)};
   opacity: ${props => props.opacity};
   
@@ -65,19 +65,19 @@ const StyledText = styled.p`
     `} 
 
   @media (min-width: ${theme.screens.sm}) {
-    font-size: 13px;
+    font-size: ${theme.fontSizes.p.sm};
   }
 
   @media (min-width: ${theme.screens.md}) {
-    font-size: 13px;
+    font-size: ${theme.fontSizes.p.md};
   }
 
   @media (min-width: ${theme.screens.lg}) {
-    font-size: 13px;
+    font-size: ${theme.fontSizes.p.lg};
   }
 
   @media (min-width: ${theme.screens.xl}) {
-    font-size: 15px;
+    font-size: ${theme.fontSizes.p.xl};
   }
 `
 
