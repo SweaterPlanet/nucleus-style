@@ -1,3 +1,6 @@
+const black = '#000000'
+const white = '#ffffff'
+
 const aqua = {
   lighter: '#CEF2FD',
   light: '#9DE5FB',
@@ -5,8 +8,6 @@ const aqua = {
   dark: '#0897C4',
   darker: '#044C62',
 }
-
-const black = '#000000'
 
 const blue = {
   lighter: '#D2E8F9',
@@ -55,8 +56,6 @@ const slate = {
   dark: '#0F1215',
   darker: black,
 }
-
-const white = '#ffffff'
 
 const colors = {
   aqua,
