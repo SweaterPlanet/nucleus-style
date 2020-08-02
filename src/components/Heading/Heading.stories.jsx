@@ -1,6 +1,6 @@
 import React from 'react'
 import { withKnobs, number, select, text } from '@storybook/addon-knobs/react'
-import { H1, H2, H3 } from './src'
+import { H1, H2, H3, H4 } from './src'
 
 export default {
   title: 'Heading',
@@ -12,6 +12,7 @@ const textLabel = 'Text'
 const h1Default = 'Heading 1'
 const h2Default = 'Heading 2'
 const h3Default = 'Heading 3'
+const h4Default = 'Heading 4'
 
 const colorLabel = 'Color'
 const colorOptions = {
@@ -57,14 +58,27 @@ asH2.story = {
 }
 
 export const asH3 = () => (
-  <H2
+  <H3
     color={select(colorLabel, colorOptions, colorDefault)}
     opacity={number(opacityLabel, opacityDefault)}
   >
     {text(textLabel, h3Default)}
-  </H2>
+  </H3>
 )
 
 asH3.story = {
   name: 'as H3',
+}
+
+export const asH4 = () => (
+  <H4
+    color={select(colorLabel, colorOptions, colorDefault)}
+    opacity={number(opacityLabel, opacityDefault)}
+  >
+    {text(textLabel, h4Default)}
+  </H4>
+)
+
+asH4.story = {
+  name: 'as H4',
 }
