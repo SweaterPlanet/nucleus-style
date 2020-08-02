@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import theme from '../../theme'
+import theme from '../../../theme'
 
 const H1 = styled.h1`
   font-family: ${theme.fonts.header};

@@ -1,7 +1,6 @@
 import React from 'react'
 import { withKnobs, number, select, text } from '@storybook/addon-knobs/react'
-import Heading from '.'
-import H1 from './H1'
+import { H1 } from './src'
 
 export default {
   title: 'Heading',
