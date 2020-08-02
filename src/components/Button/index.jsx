@@ -193,56 +193,92 @@ ${props =>
   ${props =>
     props.bg === 'aqua' &&
     `
-  background-color: ${theme.colors.aqua.base};
+      background-color: ${theme.colors.aqua.base};
+
+      &:hover {
+        background-color: ${theme.colors.aqua.light};
+      }
     `}  
 
   ${props =>
     props.bg === 'black' &&
     `
-    background-color: ${theme.colors.black};
+      background-color: ${theme.colors.black};
+
+      &:hover {
+        background-color: ${theme.colors.slate.base};
+      }
     `} 
 
 
   ${props =>
     props.bg === 'blue' &&
     `
-    background-color: ${theme.colors.blue.base};
+      background-color: ${theme.colors.blue.base};
+
+      &:hover {
+        background-color: ${theme.colors.blue.light};
+      }
     `}  
 
   ${props =>
     props.bg === 'green' &&
     `
-    background-color: ${theme.colors.green.base};
+      background-color: ${theme.colors.green.base};
+
+      &:hover {
+        background-color: ${theme.colors.green.light};
+      }
     `}
 
   ${props =>
     props.bg === 'paper' &&
     `
-    background-color: ${theme.colors.paper.base};
+      background-color: ${theme.colors.paper.base};
+
+      &:hover {
+        background-color: ${theme.colors.paper.light};
+      }
     `} 
 
   ${props =>
     props.bg === 'purple' &&
     `
-    background-color: ${theme.colors.purple.base};
+      background-color: ${theme.colors.purple.base};
+
+      &:hover {
+        background-color: ${theme.colors.purple.light};
+      }
     `}
 
   ${props =>
     props.bg === 'red' &&
     `
-    background-color: ${theme.colors.red.base};
+      background-color: ${theme.colors.red.base};
+
+      &:hover {
+        background-color: ${theme.colors.red.light};
+      }
     `} 
 
   ${props =>
     props.bg === 'slate' &&
     `
-    background-color: ${theme.colors.slate.base};
+      background-color: ${theme.colors.slate.base};
+
+      &:hover {
+        background-color: ${theme.colors.slate.light};
+      }
     `} 
 
   ${props =>
     props.bg === 'white' &&
     `
       background-color: ${theme.colors.white};
+
+      &:hover {
+        background-color: ${theme.colors.paper.base};
+      }
     `} 
 `
 
