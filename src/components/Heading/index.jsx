@@ -1,9 +1,10 @@
 import React from 'react'
-import { H1, H2 } from '/src'
+import { H1, H2, H3 } from '/src'
 
 const components = {
   h1: H1,
   h2: H2,
+  h3: H3,
 }
 
 function Heading(props) {
