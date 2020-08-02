@@ -36,7 +36,7 @@ Heading.propTypes = {
 
 Heading.defaultProps = {
   color: 'black',
-  opacity: '1',
+  opacity: 1,
 }
 
 export default Heading

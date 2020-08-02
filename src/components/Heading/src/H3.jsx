@@ -97,7 +97,7 @@ H3.propTypes = {
 
 H3.defaultProps = {
   color: 'black',
-  opacity: '1',
+  opacity: 1,
 }
 
 export default H3
