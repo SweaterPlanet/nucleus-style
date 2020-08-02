@@ -11,7 +11,8 @@
     "format:check": "prettier --check \"**/*.{js,jsx,md,mdx}\" && echo 'Format check complete.'",
     "lint": "eslint \"**/*.{js,jsx}\" && echo 'Lint complete.'",
     "release": "standard-version",
-    "storybook": "start-storybook",
+    "start": "npm run storybook",
+    "storybook": "start-storybook -p 9000 -c .storybook",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
