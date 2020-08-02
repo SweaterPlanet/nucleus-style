@@ -4,7 +4,7 @@ import theme from '../../../theme'
 const H3 = styled.h3`
   font-family: ${theme.fonts.header};
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   opacity: ${props => props.opacity};
 
   ${props =>
