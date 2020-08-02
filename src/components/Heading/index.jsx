@@ -1,8 +1,9 @@
 import React from 'react'
-import H1 from '/src'
+import { H1, H2 } from '/src'
 
 const components = {
   h1: H1,
+  h2: H2,
 }
 
 function Heading(props) {
