@@ -16,3 +16,6 @@ export { default as LinkButton } from './components/LinkButton'
 
 // Typography
 export { default as Text } from './components/Text'
+
+// Theme
+export { default as theme } from './theme'
