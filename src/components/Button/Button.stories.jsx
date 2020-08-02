@@ -1,4 +1,5 @@
 import React from 'react'
+import { action } from '@storybook/addon-actions'
 import {
   withKnobs,
   boolean,
@@ -59,6 +60,9 @@ const mdDefault = 'Medium'
 const lgDefault = 'Large'
 const xlDefault = 'XLarge'
 
+const onClickLabel = 'clicked'
+const onMouseOverLabel = 'hovered'
+
 export const All = () => (
   <>
     <Button
@@ -68,6 +72,8 @@ export const All = () => (
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
+      onClick={action(onClickLabel)}
+      onMouseOver={action(onMouseOverLabel)}
     >
       {text(textLabel, textDefault)}
     </Button>
@@ -78,6 +84,8 @@ export const All = () => (
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
+      onClick={action(onClickLabel)}
+      onMouseOver={action(onMouseOverLabel)}
     >
       {text(textLabel, textDefault)}
     </Button>
@@ -88,6 +96,8 @@ export const All = () => (
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
+      onClick={action(onClickLabel)}
+      onMouseOver={action(onMouseOverLabel)}
     >
       {text(textLabel, textDefault)}
     </Button>
@@ -98,6 +108,8 @@ export const All = () => (
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
+      onClick={action(onClickLabel)}
+      onMouseOver={action(onMouseOverLabel)}
     >
       {text(textLabel, textDefault)}
     </Button>
@@ -108,6 +120,8 @@ export const All = () => (
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
+      onClick={action(onClickLabel)}
+      onMouseOver={action(onMouseOverLabel)}
     >
       {text(textLabel, textDefault)}
     </Button>
@@ -122,6 +136,8 @@ export const XS = () => (
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}
+    onClick={action(onClickLabel)}
+    onMouseOver={action(onMouseOverLabel)}
   >
     {text(textLabel, xsDefault)}
   </Button>
@@ -135,6 +151,8 @@ export const SM = () => (
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}
+    onClick={action(onClickLabel)}
+    onMouseOver={action(onMouseOverLabel)}
   >
     {text(textLabel, smDefault)}
   </Button>
@@ -148,6 +166,8 @@ export const MD = () => (
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}
+    onClick={action(onClickLabel)}
+    onMouseOver={action(onMouseOverLabel)}
   >
     {text(textLabel, mdDefault)}
   </Button>
@@ -161,6 +181,8 @@ export const LG = () => (
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}
+    onClick={action(onClickLabel)}
+    onMouseOver={action(onMouseOverLabel)}
   >
     {text(textLabel, lgDefault)}
   </Button>
@@ -174,6 +196,8 @@ export const XL = () => (
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}
+    onClick={action(onClickLabel)}
+    onMouseOver={action(onMouseOverLabel)}
   >
     {text(textLabel, xlDefault)}
   </Button>
