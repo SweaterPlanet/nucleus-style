@@ -10,7 +10,11 @@ const components = {
 
 function Heading(props) {
   const HeadingByElement = components[props.element]
-  return <HeadingByElement />
+  return (
+    <HeadingByElement color={props.color} opacity={props.opacity}>
+      {props.children}
+    </HeadingByElement>
+  )
 }
 
 export default Heading
