@@ -1,5 +1,6 @@
 import React from 'react'
-import { H1, H2, H3, H4 } from '/src'
+import PropTypes from 'prop-types'
+import { H1, H2, H3, H4 } from './src'
 
 const components = {
   h1: H1,
@@ -15,6 +16,27 @@ function Heading(props) {
       {props.children}
     </HeadingByElement>
   )
+}
+
+Heading.propTypes = {
+  color: PropTypes.oneOf([
+    'aqua',
+    'black',
+    'blue',
+    'green',
+    'paper',
+    'purple',
+    'red',
+    'slate',
+    'white',
+  ]),
+  element: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),
+  opacity: PropTypes.number,
+}
+
+Heading.defaultProps = {
+  color: 'black',
+  opacity: '1',
 }
 
 export default Heading

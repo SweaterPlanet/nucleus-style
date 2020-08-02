@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 import theme from '../../../theme'
 
 const H2 = styled.h2`
@@ -78,5 +79,25 @@ const H2 = styled.h2`
     font-size: 50px;
   }
 `
+
+H2.propTypes = {
+  color: PropTypes.oneOf([
+    'aqua',
+    'black',
+    'blue',
+    'green',
+    'paper',
+    'purple',
+    'red',
+    'slate',
+    'white',
+  ]),
+  opacity: PropTypes.number,
+}
+
+H2.defaultProps = {
+  color: 'black',
+  opacity: '1',
+}
 
 export default H2

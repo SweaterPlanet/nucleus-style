@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 import theme from '../../../theme'
 
 const H3 = styled.h3`
@@ -78,5 +79,25 @@ const H3 = styled.h3`
     font-size: 30px;
   }
 `
+
+H3.propTypes = {
+  color: PropTypes.oneOf([
+    'aqua',
+    'black',
+    'blue',
+    'green',
+    'paper',
+    'purple',
+    'red',
+    'slate',
+    'white',
+  ]),
+  opacity: PropTypes.number,
+}
+
+H3.defaultProps = {
+  color: 'black',
+  opacity: '1',
+}
 
 export default H3

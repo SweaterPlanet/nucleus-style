@@ -1,14 +1,16 @@
 import React from 'react'
 import { withKnobs, number, select, text } from '@storybook/addon-knobs/react'
+import Heading from './index'
 import { H1, H2, H3, H4 } from './src'
 
 export default {
   title: 'Heading',
+  component: Heading,
   decorators: [withKnobs],
 }
 
 const textLabel = 'Text'
-
+const textDefault = 'Heading'
 const h1Default = 'Heading 1'
 const h2Default = 'Heading 2'
 const h3Default = 'Heading 3'
@@ -30,6 +32,35 @@ const colorDefault = 'black'
 
 const opacityLabel = 'Opacity'
 const opacityDefault = '1'
+
+export const All = () => (
+  <>
+    <H1
+      color={select(colorLabel, colorOptions, colorDefault)}
+      opacity={number(opacityLabel, opacityDefault)}
+    >
+      {text(textLabel, textDefault)}
+    </H1>
+    <H2
+      color={select(colorLabel, colorOptions, colorDefault)}
+      opacity={number(opacityLabel, opacityDefault)}
+    >
+      {text(textLabel, textDefault)}
+    </H2>
+    <H3
+      color={select(colorLabel, colorOptions, colorDefault)}
+      opacity={number(opacityLabel, opacityDefault)}
+    >
+      {text(textLabel, textDefault)}
+    </H3>
+    <H4
+      color={select(colorLabel, colorOptions, colorDefault)}
+      opacity={number(opacityLabel, opacityDefault)}
+    >
+      {text(textLabel, textDefault)}
+    </H4>
+  </>
+)
 
 export const asH1 = () => (
   <H1

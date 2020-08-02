@@ -81,11 +81,6 @@ const H1 = styled.h1`
 `
 
 H1.propTypes = {
-  color: PropTypes.string,
-  opacity: PropTypes.number,
-}
-
-H1.defaultProps = {
   color: PropTypes.oneOf([
     'aqua',
     'black',
@@ -97,6 +92,11 @@ H1.defaultProps = {
     'slate',
     'white',
   ]),
+  opacity: PropTypes.number,
+}
+
+H1.defaultProps = {
+  color: 'black',
   opacity: '1',
 }
 
