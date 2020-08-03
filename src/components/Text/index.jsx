@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import theme from '../../theme'
 
-const StyledText = styled.p`
+export const StyledText = styled.p`
   font-family: ${theme.fonts.body};
   font-size: ${theme.fontSizes.p.xs};
   font-weight: ${props => (props.bold ? 600 : 400)};
@@ -11,56 +11,56 @@ const StyledText = styled.p`
   
   ${props =>
     props.color === 'aqua' &&
-    `
+    css`
       color: ${theme.colors.aqua.base};
     `}  
 
   ${props =>
     props.color === 'black' &&
-    `
+    css`
       color: ${theme.colors.black};
     `} 
 
 
   ${props =>
     props.color === 'blue' &&
-    `
+    css`
       color: ${theme.colors.blue.base};
     `}  
 
   ${props =>
     props.color === 'green' &&
-    `
+    css`
       color: ${theme.colors.green.base};
     `}
 
   ${props =>
     props.color === 'paper' &&
-    `
+    css`
       color: ${theme.colors.paper.base};
     `} 
 
   ${props =>
     props.color === 'purple' &&
-    `
+    css`
       color: ${theme.colors.purple.base};
     `}
 
   ${props =>
     props.color === 'red' &&
-    `
+    css`
       color: ${theme.colors.red.base};
     `} 
 
   ${props =>
     props.color === 'slate' &&
-    `
+    css`
       color: ${theme.colors.slate.base};
     `} 
   
   ${props =>
     props.color === 'white' &&
-    `
+    css`
       color: ${theme.colors.white};
     `} 
 
