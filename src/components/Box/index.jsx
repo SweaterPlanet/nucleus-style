@@ -1,8 +1,11 @@
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import theme from '../../theme'
 
-const Box = styled.div`
+const StyledBox = styled.div`
+  font-family: ${theme.fonts.body};
+
   /* layout */
   display: ${props => props.display || props.d};
   width: ${props => props.width || props.w};
@@ -138,6 +141,10 @@ const Box = styled.div`
     `} 
 `
 
+function Box(props) {
+  return <StyledBox {...props}>{props.children}</StyledBox>
+}
+
 Box.propTypes = {
   bg: PropTypes.oneOf([
     'aqua',
@@ -174,6 +181,7 @@ Box.propTypes = {
   maxHeight: PropTypes.number,
   maxWidth: PropTypes.number,
   mb: PropTypes.number,
+  minHeight: PropTypes.number,
   minWidth: PropTypes.number,
   ml: PropTypes.number,
   mr: PropTypes.number,
@@ -196,7 +204,6 @@ Box.propTypes = {
 }
 
 Box.defaultProps = {
-  bg: 'paper',
   color: 'black',
 }
 
