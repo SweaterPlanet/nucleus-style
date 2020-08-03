@@ -1,9 +1,12 @@
 name: deploy
-on: [push]
+
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   deploy:
-    name: Deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -13,7 +16,7 @@ jobs:
         run: npm install
 
       - name: Build Storybook
-        run: npm install
+        run: npm run deploy
 
       - name: Deploy to GCP
         uses: actions-hub/gcloud@master
