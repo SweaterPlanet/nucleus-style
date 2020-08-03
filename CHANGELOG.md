@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/TheSweaterGuys/nucleus-style/compare/v0.3.0...v0.5.0) (2020-08-03)
+
+
+### 🚀 Features
+
+* update Heading component ([#47](https://github.com/TheSweaterGuys/nucleus-style/issues/47)) ([5daee69](https://github.com/TheSweaterGuys/nucleus-style/commit/5daee691976f92be567cd9a24981791425df646d))
+* update Button component ([#49](https://github.com/TheSweaterGuys/nucleus-style/issues/49)) ([45e59f6](https://github.com/TheSweaterGuys/nucleus-style/commit/45e59f62b229e93ba7a50b5642ec561080945002))
+
+### ✨ Improvements
+
+* add Button hovers ([6c04787](https://github.com/TheSweaterGuys/nucleus-style/commit/6c047874472dab32a4253f37e75e929c9163ecb9))
+* add contributing guide ([#37](https://github.com/TheSweaterGuys/nucleus-style/issues/37)) ([dd8c6c4](https://github.com/TheSweaterGuys/nucleus-style/commit/dd8c6c45f3ce1570392a616de51c113f444b022e))
+* add fonts theming ([957118f](https://github.com/TheSweaterGuys/nucleus-style/commit/957118f53c1bd3edd8d9e5d58a1b2785a6468d5a))
+* add installation guide ([#52](https://github.com/TheSweaterGuys/nucleus-style/issues/52)) ([7935249](https://github.com/TheSweaterGuys/nucleus-style/commit/79352497fc48ca2a71db14a2209c2b251f2fd44a))
+* add tests for Text component ([#53](https://github.com/TheSweaterGuys/nucleus-style/issues/53)) ([2f0e1bc](https://github.com/TheSweaterGuys/nucleus-style/commit/2f0e1bc8ad7e5fdfe2714bc7bd35f74af2402d2d))
+* add colors and screens theming ([#40](https://github.com/TheSweaterGuys/nucleus-style/issues/40)) ([8e1ab2c](https://github.com/TheSweaterGuys/nucleus-style/commit/8e1ab2c5ecb117d003e5de074e1e9ec614e448be))
+* display event handlers for Button ([03a9add](https://github.com/TheSweaterGuys/nucleus-style/commit/03a9addbd3507ebb42a71d768957fc902e9b11e6))
+* separate test and build workflows ([#54](https://github.com/TheSweaterGuys/nucleus-style/issues/54)) ([4181b21](https://github.com/TheSweaterGuys/nucleus-style/commit/4181b21014eafe209c936edac9a479b50b7381c9))
+* switch to storybook ([#43](https://github.com/TheSweaterGuys/nucleus-style/issues/43)) ([2fb46ed](https://github.com/TheSweaterGuys/nucleus-style/commit/2fb46ed6ca544f9095e62bd2d437338a286ce9f9))
+* switch to storybook ([#43](https://github.com/TheSweaterGuys/nucleus-style/issues/43)) ([bf50ea9](https://github.com/TheSweaterGuys/nucleus-style/commit/bf50ea9902b975421daad343907377573384e6b3))
+* Text component ([#48](https://github.com/TheSweaterGuys/nucleus-style/issues/48)) ([0cc7f40](https://github.com/TheSweaterGuys/nucleus-style/commit/0cc7f4067bd222964b6cd1c70afdf02b5ddddf0f))
+
+### Breaking Changes
+
+* old Heading components are deprecated and removed: `Heading20`, `Heading23`, `Heading25`, `Heading30`, `Heading35`, `Heading38`, `Heading40`, `Heading50`, `Heading65`, `Heading68`, `Heading80`
+
 ## [0.4.1] (2020-08-01)
 
 
