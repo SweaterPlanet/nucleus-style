@@ -43,6 +43,9 @@ const bgOptions = {
 }
 const bgDefault = 'paper'
 
+const disabledLabel = 'Disabled'
+const disabledDefault = false
+
 const opacityLabel = 'Opacity'
 const opacityDefault = '1'
 
@@ -69,6 +72,7 @@ export const All = () => (
       size="xs"
       bg={select(bgLabel, bgOptions, bgDefault)}
       color={select(colorLabel, colorOptions, colorDefault)}
+      disabled={boolean(disabledLabel, disabledDefault)}
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
@@ -81,6 +85,7 @@ export const All = () => (
       size="sm"
       bg={select(bgLabel, bgOptions, bgDefault)}
       color={select(colorLabel, colorOptions, colorDefault)}
+      disabled={boolean(disabledLabel, disabledDefault)}
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
@@ -93,6 +98,7 @@ export const All = () => (
       size="md"
       bg={select(bgLabel, bgOptions, bgDefault)}
       color={select(colorLabel, colorOptions, colorDefault)}
+      disabled={boolean(disabledLabel, disabledDefault)}
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
@@ -105,6 +111,7 @@ export const All = () => (
       size="lg"
       bg={select(bgLabel, bgOptions, bgDefault)}
       color={select(colorLabel, colorOptions, colorDefault)}
+      disabled={boolean(disabledLabel, disabledDefault)}
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
@@ -117,6 +124,7 @@ export const All = () => (
       size="xl"
       bg={select(bgLabel, bgOptions, bgDefault)}
       color={select(colorLabel, colorOptions, colorDefault)}
+      disabled={boolean(disabledLabel, disabledDefault)}
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
@@ -133,6 +141,7 @@ export const XS = () => (
     size="xs"
     bg={select(bgLabel, bgOptions, bgDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
+    disabled={boolean(disabledLabel, disabledDefault)}
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}
@@ -148,6 +157,7 @@ export const SM = () => (
     size="sm"
     bg={select(bgLabel, bgOptions, bgDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
+    disabled={boolean(disabledLabel, disabledDefault)}
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}
@@ -163,6 +173,7 @@ export const MD = () => (
     size="md"
     bg={select(bgLabel, bgOptions, bgDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
+    disabled={boolean(disabledLabel, disabledDefault)}
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}
@@ -178,6 +189,7 @@ export const LG = () => (
     size="lg"
     bg={select(bgLabel, bgOptions, bgDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
+    disabled={boolean(disabledLabel, disabledDefault)}
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}
@@ -193,6 +205,7 @@ export const XL = () => (
     size="xl"
     bg={select(bgLabel, bgOptions, bgDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
+    disabled={boolean(disabledLabel, disabledDefault)}
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}

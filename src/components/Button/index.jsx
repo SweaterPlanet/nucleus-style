@@ -12,6 +12,12 @@ const StyledButton = styled.button`
   opacity: ${props => props.opacity};
   cursor: pointer;
 
+  :disabled {
+    color: ${props => theme.colors[props.color].light};
+    background-color: ${props => theme.colors[props.bg].light};
+    pointer-events: none;
+  }
+
   ${props =>
     props.round &&
     `
