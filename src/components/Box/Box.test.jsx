@@ -46,9 +46,45 @@ describe('Box', () => {
     expect(test.prop('margin')).toBe(testProp)
   })
 
-  it('respects the margin prop', () => {
+  it('respects the maxHeight prop', () => {
+    const testProp = '100%'
+    const test = shallow(<Box maxHeight={testProp} />)
+    expect(test.prop('maxHeight')).toBe(testProp)
+  })
+
+  it('respects the maxWidth prop', () => {
+    const testProp = '100%'
+    const test = shallow(<Box maxWidth={testProp} />)
+    expect(test.prop('maxWidth')).toBe(testProp)
+  })
+
+  it('respects the minHeight prop', () => {
+    const testProp = '100%'
+    const test = shallow(<Box minHeight={testProp} />)
+    expect(test.prop('minHeight')).toBe(testProp)
+  })
+
+  it('respects the minWidth prop', () => {
+    const testProp = '100%'
+    const test = shallow(<Box minWidth={testProp} />)
+    expect(test.prop('minWidth')).toBe(testProp)
+  })
+
+  it('respects the overflow prop', () => {
+    const testProp = 'hidden'
+    const test = shallow(<Box overflow={testProp} />)
+    expect(test.prop('overflow')).toBe(testProp)
+  })
+
+  it('respects the padding prop', () => {
     const testProp = '4px 8px 12px 16px'
-    const test = shallow(<Box margin={testProp} />)
-    expect(test.prop('margin')).toBe(testProp)
+    const test = shallow(<Box padding={testProp} />)
+    expect(test.prop('padding')).toBe(testProp)
+  })
+
+  it('respects the width prop', () => {
+    const testProp = '40%'
+    const test = shallow(<Box width={testProp} />)
+    expect(test.prop('width')).toBe(testProp)
   })
 })
