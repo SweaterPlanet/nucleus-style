@@ -1,7 +1,6 @@
 name: test
 
-on:
-  pull_request:
+on: pull_request
 
 jobs:
   test:
@@ -10,5 +9,4 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: Test
-      run: npm run test
-
+        run: npm run test
