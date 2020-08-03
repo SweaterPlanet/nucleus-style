@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import theme from '../../theme'
 
-const StyledBox = styled.div`
+export const StyledBox = styled.div`
   font-family: ${theme.fonts.body};
 
   /* layout */
@@ -168,12 +168,12 @@ Box.propTypes = {
     'slate',
     'white',
   ]),
-  d: PropTypes.number,
-  display: PropTypes.number,
-  h: PropTypes.number,
-  height: PropTypes.number,
-  m: PropTypes.number,
-  margin: PropTypes.number,
+  d: PropTypes.string,
+  display: PropTypes.string,
+  h: PropTypes.string,
+  height: PropTypes.string,
+  m: PropTypes.string,
+  margin: PropTypes.string,
   marginBottom: PropTypes.number,
   marginLeft: PropTypes.number,
   marginRight: PropTypes.number,
