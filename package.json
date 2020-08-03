@@ -13,7 +13,8 @@
     "release": "standard-version",
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9000 -c .storybook",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "npm run test -- --watch"
   },
   "files": [
     "dist"
