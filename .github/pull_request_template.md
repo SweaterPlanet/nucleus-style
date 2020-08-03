@@ -5,9 +5,9 @@
 
 ## Merge checklist:
 
-- [ ] Add/update docs
-- [ ] Add/update prop types
-- [ ] Add/update stories
-- [ ] Add/update tests
-- [ ] Format/lint code
-- [ ] Test package locally
+- [ ] Documentation is up to date
+- [ ] Prop types are up to date
+- [ ] Stories are up to date
+- [ ] Tests are up to date and passing
+- [ ] Lint/format code
+- [ ] Tested package locally
