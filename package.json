@@ -13,7 +13,8 @@
     "release": "standard-version",
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9000 -c .storybook",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "npm run test -- --watch"
   },
   "files": [
     "dist"
@@ -36,6 +37,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-commonjs": "^14.0.0",
@@ -46,12 +48,17 @@
     "@storybook/addon-viewport": "^5.3.19",
     "@storybook/react": "^5.3.19",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.2.2",
     "babel-loader": "^8.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
+    "jest": "^26.2.2",
+    "jest-styled-components": "^7.0.2",
     "prettier": "^2.0.5",
     "prop-types": "^15.7.2",
     "react-is": "^16.13.1",
