@@ -13,7 +13,7 @@
     "release": "standard-version",
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9000 -c .storybook",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "files": [
     "dist"
@@ -52,6 +52,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
+    "jest": "^26.2.2",
     "prettier": "^2.0.5",
     "prop-types": "^15.7.2",
     "react-is": "^16.13.1",
