@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading renders as h1 1`] = `ShallowWrapper {}`;
+
+exports[`Heading renders as h2 1`] = `ShallowWrapper {}`;
+
+exports[`Heading renders as h3 1`] = `ShallowWrapper {}`;
+
+exports[`Heading renders as h4 1`] = `ShallowWrapper {}`;
+
+exports[`Heading renders correctly 1`] = `ShallowWrapper {}`;
