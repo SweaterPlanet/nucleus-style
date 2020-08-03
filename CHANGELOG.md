@@ -2,13 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [0.5.0](https://github.com/TheSweaterGuys/nucleus-style/compare/v0.3.0...v0.5.0) (2020-08-03)
+### [0.5.1] (2020-08-03)
+
+
+### ✨ Improvements
+
+* add Box prop types ([#60](https://github.com/TheSweaterGuys/nucleus-style/issues/60)) ([5de484a](https://github.com/TheSweaterGuys/nucleus-style/commit/5de484a771906ed650f6bdd53c05adb920649aad))
+* add Box stories ([#61](https://github.com/TheSweaterGuys/nucleus-style/issues/61)) ([c3a41b2](https://github.com/TheSweaterGuys/nucleus-style/commit/c3a41b23009dc3bc6c604bd5aab2257c5dee8f26))
+* add Button disabled styling ([#57](https://github.com/TheSweaterGuys/nucleus-style/issues/57)) ([2e46142](https://github.com/TheSweaterGuys/nucleus-style/commit/2e4614215255466121d1c068183ab18e1f4c82ea))
+* add PR template ([#59](https://github.com/TheSweaterGuys/nucleus-style/issues/59)) ([2528930](https://github.com/TheSweaterGuys/nucleus-style/commit/252893071e5e38e37101bcd0a61adc422f5c08b9))
+* write Box tests ([#63](https://github.com/TheSweaterGuys/nucleus-style/issues/63)) ([c3a11cb](https://github.com/TheSweaterGuys/nucleus-style/commit/c3a11cb9baeec7ba9bc68cd38580892dd4ad5331))
+* write tests for Button component ([#58](https://github.com/TheSweaterGuys/nucleus-style/issues/58)) ([26f0b3f](https://github.com/TheSweaterGuys/nucleus-style/commit/26f0b3f4b5046f4fe83a75a07a6f447832cac273))
+* write tests for Heading component ([#56](https://github.com/TheSweaterGuys/nucleus-style/issues/56)) ([6e42c4d](https://github.com/TheSweaterGuys/nucleus-style/commit/6e42c4d23962ef32ec7a9742994680433dcc5b61))
+
+## [0.5.0] (2020-08-03)
 
 
 ### 🚀 Features
 
-* update Heading component ([#47](https://github.com/TheSweaterGuys/nucleus-style/issues/47)) ([5daee69](https://github.com/TheSweaterGuys/nucleus-style/commit/5daee691976f92be567cd9a24981791425df646d))
-* update Button component ([#49](https://github.com/TheSweaterGuys/nucleus-style/issues/49)) ([45e59f6](https://github.com/TheSweaterGuys/nucleus-style/commit/45e59f62b229e93ba7a50b5642ec561080945002))
+* new implementation of Heading component ([#47](https://github.com/TheSweaterGuys/nucleus-style/issues/47)) ([5daee69](https://github.com/TheSweaterGuys/nucleus-style/commit/5daee691976f92be567cd9a24981791425df646d))
+* new implementation of Button component ([#49](https://github.com/TheSweaterGuys/nucleus-style/issues/49)) ([45e59f6](https://github.com/TheSweaterGuys/nucleus-style/commit/45e59f62b229e93ba7a50b5642ec561080945002))
+* new implementation of Text component ([#48](https://github.com/TheSweaterGuys/nucleus-style/issues/48)) ([0cc7f40](https://github.com/TheSweaterGuys/nucleus-style/commit/0cc7f4067bd222964b6cd1c70afdf02b5ddddf0f))
+
 
 ### ✨ Improvements
 
@@ -21,12 +36,13 @@ All notable changes to this project will be documented in this file. See [standa
 * display event handlers for Button ([03a9add](https://github.com/TheSweaterGuys/nucleus-style/commit/03a9addbd3507ebb42a71d768957fc902e9b11e6))
 * separate test and build workflows ([#54](https://github.com/TheSweaterGuys/nucleus-style/issues/54)) ([4181b21](https://github.com/TheSweaterGuys/nucleus-style/commit/4181b21014eafe209c936edac9a479b50b7381c9))
 * switch to storybook ([#43](https://github.com/TheSweaterGuys/nucleus-style/issues/43)) ([2fb46ed](https://github.com/TheSweaterGuys/nucleus-style/commit/2fb46ed6ca544f9095e62bd2d437338a286ce9f9))
-* switch to storybook ([#43](https://github.com/TheSweaterGuys/nucleus-style/issues/43)) ([bf50ea9](https://github.com/TheSweaterGuys/nucleus-style/commit/bf50ea9902b975421daad343907377573384e6b3))
-* Text component ([#48](https://github.com/TheSweaterGuys/nucleus-style/issues/48)) ([0cc7f40](https://github.com/TheSweaterGuys/nucleus-style/commit/0cc7f4067bd222964b6cd1c70afdf02b5ddddf0f))
 
-### Breaking Changes
+
+### 🚨 Breaking Changes
 
 * old Heading components are deprecated and removed: `Heading20`, `Heading23`, `Heading25`, `Heading30`, `Heading35`, `Heading38`, `Heading40`, `Heading50`, `Heading65`, `Heading68`, `Heading80`
+* old Button components are deprecated: `ButtonMaxWidth`, `ButtonRounded`
+
 
 ## [0.4.1] (2020-08-01)
 
