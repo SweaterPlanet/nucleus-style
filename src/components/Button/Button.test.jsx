@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { mount, shallow } from 'enzyme'
 
 import Button from '.'
 
@@ -7,6 +7,27 @@ describe('Button', () => {
   it('renders correctly', () => {
     const test = shallow(<Button>Test</Button>)
     expect(test).toMatchSnapshot()
+  })
+
+  it('disables correctly', () => {
+    const test = mount(<Button disabled>Test</Button>)
+    expect(test.prop('disabled')).toBeTruthy()
+  })
+
+  it('registers clicks', () => {
+    const mockCallBack = jest.fn()
+
+    const test = shallow(<Button onClick={mockCallBack}>Test</Button>)
+    test.simulate('click')
+    expect(mockCallBack.mock.calls.length).toEqual(1)
+  })
+
+  it('registers hovers', () => {
+    const mockCallBack = jest.fn()
+
+    const test = shallow(<Button onMouseOver={mockCallBack}>Test</Button>)
+    test.simulate('mouseover')
+    expect(mockCallBack.mock.calls.length).toEqual(1)
   })
 
   it('size renders as `md` by default', () => {
