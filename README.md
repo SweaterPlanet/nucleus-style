@@ -6,7 +6,7 @@
 
 ### Setup
 
-Create a [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) and add the token to the `.npmrc` file in the root directory. Please don't commit your changes.
+Create a [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) and add the token to the `.npmrc` file in the root directory. Please don't commit this file.
 
 If you're running into issues, check the [Github docs](https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages).
 
@@ -22,7 +22,7 @@ npm install @thesweaterguys/nucleus-style
 
 Nucleus Style ships with a few libraries as peer dependencies.
 
-Make sure you have `react`, `react-dom`, and `styled-components` in the project:
+Make sure you have `react`, `react-dom`, and `styled-components` in your project:
 
 - `react` at version 16.8.0 or higher
 - `react-dom` at version 16.8.0 or higher
