@@ -20,9 +20,17 @@ const StyledImage = styled(Box)`
     `}
 `
 
-const Image = ({ size, src, ...props }) => (
-  <StyledImage as="img" width={size} height={size} src={src} {...props} />
-)
+function Image(props) {
+  return (
+    <StyledImage
+      as="img"
+      width={props.size}
+      height={props.size}
+      src={props.src}
+      {...props}
+    />
+  )
+}
 
 Image.propTypes = {
   circle: PropTypes.bool,
