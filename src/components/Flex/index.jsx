@@ -35,13 +35,13 @@ Flex.propTypes = {
   flex: PropTypes.string,
   flexBasis: PropTypes.string,
   flexDirection: PropTypes.string,
-  flexGrow: PropTypes.string,
-  flexShrink: PropTypes.string,
+  flexGrow: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  flexShrink: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   flexWrap: PropTypes.string,
   justifyContent: PropTypes.string,
   justifyItems: PropTypes.string,
   justifySelf: PropTypes.string,
-  order: PropTypes.string,
+  order: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   ...Box.propTypes,
 }
 
