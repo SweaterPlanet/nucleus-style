@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import Box from '../Box'
+import Box from '../Box/index'
 
 const StyledCard = styled(Box)`
   border-radius: ${props => (props.round ? '8px' : 0)};
@@ -23,7 +23,7 @@ Card.propTypes = {
 
 Card.defaultProps = {
   opacity: 1,
-  padding: '20px',
+  ...Box.defaultProps,
 }
 
 export default Card
