@@ -2,12 +2,9 @@
 
 ## Branches
 
-We use a two-tiered branch organization to keep `master` in a releasable state for auto publishing the component library as a package.
+We have one main branch, `master`, that we try to keep in a releasable state for auto publishing the component library as a package.
 
-- `master`: production branch
-- `dev`: development branch
-
-All changes should be **squash and merged** into `dev`. There shouldn't ever be any direct changes made to `master`.
+All changes should be **squash and merged** into `master`.
 
 ## Changelog
 
@@ -45,14 +42,11 @@ Here are accepted types so far (that have also been configured for CHANGELOG aut
 
 Creating a new release and publishing the package are currently done manually.
 
-1. Checkout `dev` branch
-2. Autogenerate the changelog
-3. Create a pull request from `dev` into `master`
-4. Name the pull request after the release version, i.e. `v1.3.0`
-5. After all checks have passed, **rebase and merge** into `master`.
-6. Checkout `master` branch and pull the latest changes
-7. Run `npm run build` locally for the package to bundle into `/dist` folder
-8. Run `npm publish` locally to submit the package to the Github Package Registry
+1. Checkout `master` branch
+2. Autogenerate the changelog with `npm run release`
+3. Add a Github release off of `master` with tag `v<version_number>`, pasting the new CHANGELOG updates.
+4. Run `npm run build` locally for the package to bundle into `/dist` folder
+5. Run `npm publish` locally to submit the package to the Github Package Registry
 
 _This section will be updated once auto publish has been setup._
 
