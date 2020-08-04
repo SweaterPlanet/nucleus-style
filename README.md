@@ -1,6 +1,6 @@
 # nucleus-style
 
-![build](https://github.com/TheSweaterGuys/nucleus-style/workflows/build/badge.svg) ![test](https://github.com/TheSweaterGuys/nucleus-style/workflows/test/badge.svg)
+![build](https://github.com/TheSweaterGuys/nucleus-style/workflows/build/badge.svg) ![deploy](https://github.com/TheSweaterGuys/nucleus-style/workflows/deploy/badge.svg) ![test](https://github.com/TheSweaterGuys/nucleus-style/workflows/test/badge.svg)
 
 ## Getting Started
 
