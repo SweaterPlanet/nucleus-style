@@ -1,5 +1,8 @@
+import React from 'react'
+import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import Box from './Box'
+
+import Box from '../Box/index'
 
 const StyledImage = styled(Box)`
   border-radius: 0;
@@ -11,7 +14,7 @@ const StyledImage = styled(Box)`
     `}
 
   ${props =>
-    props.rounded &&
+    props.round &&
     css`
       border-radius: 8px;
     `}
@@ -20,5 +23,19 @@ const StyledImage = styled(Box)`
 const Image = ({ size, src, ...props }) => (
   <StyledImage as="img" width={size} height={size} src={src} {...props} />
 )
+
+Image.propTypes = {
+  circle: PropTypes.bool,
+  round: PropTypes.bool,
+  size: PropTypes.string,
+  src: PropTypes.string,
+  ...Box.propTypes,
+}
+
+Image.defaultProps = {
+  circle: false,
+  round: false,
+  ...Box.defaultProps,
+}
 
 export default Image
