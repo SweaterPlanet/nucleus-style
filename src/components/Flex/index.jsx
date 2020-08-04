@@ -28,19 +28,19 @@ function Flex(props) {
 }
 
 Flex.propTypes = {
-  alignContent: propTypes.string,
-  alignItems: propTypes.string,
-  alignSelf: propTypes.string,
-  flex: propTypes.string,
-  flexBasis: propTypes.string,
-  flexDirection: propTypes.string,
-  flexGrow: propTypes.string,
-  flexShrink: propTypes.string,
-  flexWrap: propTypes.string,
-  justifyContent: propTypes.string,
-  justifyItems: propTypes.string,
-  justifySelf: propTypes.string,
-  order: propTypes.string,
+  alignContent: PropTypes.string,
+  alignItems: PropTypes.string,
+  alignSelf: PropTypes.string,
+  flex: PropTypes.string,
+  flexBasis: PropTypes.string,
+  flexDirection: PropTypes.string,
+  flexGrow: PropTypes.string,
+  flexShrink: PropTypes.string,
+  flexWrap: PropTypes.string,
+  justifyContent: PropTypes.string,
+  justifyItems: PropTypes.string,
+  justifySelf: PropTypes.string,
+  order: PropTypes.string,
   ...Box.propTypes,
 }
 
