@@ -44,8 +44,9 @@ Creating a new release and publishing the package are currently done manually.
 
 1. Checkout `master` branch
 2. Autogenerate the changelog with `npm run release`
-3. Run `npm run build` locally for the package to bundle into `/dist` folder
-4. Run `npm publish` locally to submit the package to the Github Package Registry
+3. Add a Github release off of `master` with tag `v<version_number>`, pasting the new CHANGELOG updates.
+4. Run `npm run build` locally for the package to bundle into `/dist` folder
+5. Run `npm publish` locally to submit the package to the Github Package Registry
 
 _This section will be updated once auto publish has been setup._
 
