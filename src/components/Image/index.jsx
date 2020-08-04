@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components'
 
 import Box from '../Box/index'
 
-const StyledImage = styled(Box)`
+export const StyledImage = styled(Box)`
   border-radius: 0;
 
   ${props =>
