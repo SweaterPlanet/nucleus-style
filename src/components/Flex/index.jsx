@@ -31,6 +31,7 @@ Flex.propTypes = {
   alignContent: PropTypes.string,
   alignItems: PropTypes.string,
   alignSelf: PropTypes.string,
+  display: PropTypes.string,
   flex: PropTypes.string,
   flexBasis: PropTypes.string,
   flexDirection: PropTypes.string,
@@ -45,8 +46,8 @@ Flex.propTypes = {
 }
 
 Flex.defaultProps = {
-  ...Box.defaultProps,
   display: 'flex',
+  ...Box.defaultProps,
 }
 
 export default Flex
