@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0] (2020-08-04)
+
+
+### ✨ Improvements
+
+* add Card stories and define prop types ([#65](https://github.com/TheSweaterGuys/nucleus-style/issues/65)) ([e707a7d](https://github.com/TheSweaterGuys/nucleus-style/commit/e707a7df9d2efa32763ed4f5bfb4590896212abf))
+* add deploy workflow CI to README ([681f5e5](https://github.com/TheSweaterGuys/nucleus-style/commit/681f5e523bcd464e45f4c1d85ff53d4dd54ad8ec))
+* define Image props. stories, tests ([#69](https://github.com/TheSweaterGuys/nucleus-style/issues/69)) ([665f0f8](https://github.com/TheSweaterGuys/nucleus-style/commit/665f0f81aa16488b3fc21a0c00276e3e11598c03))
+* write Card tests ([#67](https://github.com/TheSweaterGuys/nucleus-style/issues/67)) ([ab98df0](https://github.com/TheSweaterGuys/nucleus-style/commit/ab98df04777585e6b6901070129d7a452efe4603))
+* write Flex stories and tests ([#68](https://github.com/TheSweaterGuys/nucleus-style/issues/68)) ([d09e90b](https://github.com/TheSweaterGuys/nucleus-style/commit/d09e90b9b720c0e1255d26c6af08d549f7303402))
+
+### 🚨 Breaking Changes
+
+* `Card` prop renamed from `rounded` to `round`
+* `Image` prop renamed from `rounded` to `round`
+
 ### [0.5.1] (2020-08-03)
 
 
