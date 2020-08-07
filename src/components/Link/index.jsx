@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import theme from '../../theme'
 
-const StyledLink = styled.a`
+export const StyledLink = styled.a`
   font-family: ${theme.fonts.header};
   font-weight: ${props => (props.bold ? 600 : 400)};
   opacity: ${props => props.opacity};

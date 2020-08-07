@@ -36,6 +36,9 @@ const colorOptions = {
 }
 const colorDefault = 'black'
 
+const disabledLabel = 'disabled'
+const disabledDefault = false
+
 const hrefLabel = 'href'
 
 const opacityLabel = 'opacity'
@@ -60,6 +63,7 @@ export const All = () => (
         bold={boolean(boldLabel, boldDefault)}
         button={boolean(buttonLabel, buttonDefault)}
         color={select(colorLabel, colorOptions, colorDefault)}
+        disabled={boolean(disabledLabel, disabledDefault)}
         href={text(hrefLabel, '')}
         opacity={number(opacityLabel, opacityDefault)}
         onClick={action(onClickLabel)}
@@ -72,6 +76,7 @@ export const All = () => (
         bold={boolean(boldLabel, boldDefault)}
         button={boolean(buttonLabel, buttonDefault)}
         color={select(colorLabel, colorOptions, colorDefault)}
+        disabled={boolean(disabledLabel, disabledDefault)}
         href={text(hrefLabel, '')}
         opacity={number(opacityLabel, opacityDefault)}
         onClick={action(onClickLabel)}
@@ -84,6 +89,7 @@ export const All = () => (
         bold={boolean(boldLabel, boldDefault)}
         button={boolean(buttonLabel, buttonDefault)}
         color={select(colorLabel, colorOptions, colorDefault)}
+        disabled={boolean(disabledLabel, disabledDefault)}
         href={text(hrefLabel, '')}
         opacity={number(opacityLabel, opacityDefault)}
         onClick={action(onClickLabel)}
@@ -96,6 +102,7 @@ export const All = () => (
         bold={boolean(boldLabel, boldDefault)}
         button={boolean(buttonLabel, buttonDefault)}
         color={select(colorLabel, colorOptions, colorDefault)}
+        disabled={boolean(disabledLabel, disabledDefault)}
         href={text(hrefLabel, '')}
         opacity={number(opacityLabel, opacityDefault)}
         onClick={action(onClickLabel)}
@@ -108,6 +115,7 @@ export const All = () => (
         bold={boolean(boldLabel, boldDefault)}
         button={boolean(buttonLabel, buttonDefault)}
         color={select(colorLabel, colorOptions, colorDefault)}
+        disabled={boolean(disabledLabel, disabledDefault)}
         href={text(hrefLabel, '')}
         opacity={number(opacityLabel, opacityDefault)}
         onClick={action(onClickLabel)}
@@ -125,6 +133,7 @@ export const XS = () => (
     bold={boolean(boldLabel, boldDefault)}
     button={boolean(buttonLabel, buttonDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
+    disabled={boolean(disabledLabel, disabledDefault)}
     href={text(hrefLabel, '')}
     opacity={number(opacityLabel, opacityDefault)}
     onClick={action(onClickLabel)}
@@ -140,6 +149,7 @@ export const SM = () => (
     bold={boolean(boldLabel, boldDefault)}
     button={boolean(buttonLabel, buttonDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
+    disabled={boolean(disabledLabel, disabledDefault)}
     href={text(hrefLabel, '')}
     opacity={number(opacityLabel, opacityDefault)}
     onClick={action(onClickLabel)}
@@ -155,6 +165,7 @@ export const MD = () => (
     bold={boolean(boldLabel, boldDefault)}
     button={boolean(buttonLabel, buttonDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
+    disabled={boolean(disabledLabel, disabledDefault)}
     href={text(hrefLabel, '')}
     opacity={number(opacityLabel, opacityDefault)}
     onClick={action(onClickLabel)}
@@ -170,6 +181,7 @@ export const LG = () => (
     bold={boolean(boldLabel, boldDefault)}
     button={boolean(buttonLabel, buttonDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
+    disabled={boolean(disabledLabel, disabledDefault)}
     href={text(hrefLabel, '')}
     opacity={number(opacityLabel, opacityDefault)}
     onClick={action(onClickLabel)}
@@ -185,6 +197,7 @@ export const XL = () => (
     bold={boolean(boldLabel, boldDefault)}
     button={boolean(buttonLabel, buttonDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
+    disabled={boolean(disabledLabel, disabledDefault)}
     href={text(hrefLabel, '')}
     opacity={number(opacityLabel, opacityDefault)}
     onClick={action(onClickLabel)}
