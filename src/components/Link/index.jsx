@@ -15,16 +15,32 @@ const StyledLink = styled.a`
 `
 
 function Link(props) {
-  return (
-    <StyledLink as={props.button} {...props}>
-      {props.children}
-    </StyledLink>
-  )
+  const button = props.button
+
+  if (button) {
+    return (
+      <StyledLink as="button " {...props}>
+        {props.children}
+      </StyledLink>
+    )
+  }
+
+  return <StyledLink {...props}>{props.children}</StyledLink>
 }
 
 Link.propTypes = {
   button: PropTypes.bool,
-  color: PropTypes.string,
+  color: PropTypes.oneOf([
+    'aqua',
+    'black',
+    'blue',
+    'green',
+    'paper',
+    'purple',
+    'red',
+    'slate',
+    'white',
+  ]),
   opacity: PropTypes.number,
 }
 
