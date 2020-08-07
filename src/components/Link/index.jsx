@@ -5,9 +5,10 @@ import theme from '../../theme'
 
 const StyledLink = styled.a`
   font-family: ${theme.fonts.header};
-  font-weight: 600;
+  font-weight: ${props => (props.bold ? 600 : 400)};
   opacity: ${props => props.opacity};
-  color: ${props => props.color};
+  padding: 0;
+  text-align: left;
   text-decoration: none;
   background: none;
   border: none;
@@ -122,6 +123,97 @@ const StyledLink = styled.a`
       font-size: ${theme.fontSizes.h1.xl}
     }
   `}
+
+  ${props =>
+    props.color === 'aqua' &&
+    `
+      color: ${theme.colors.aqua.base};
+
+      &:hover {
+        color: ${theme.colors.aqua.light};
+      }
+    `}  
+
+  ${props =>
+    props.color === 'black' &&
+    `
+      color: ${theme.colors.black};
+
+      &:hover {
+        color: ${theme.colors.slate.base};
+      }
+    `} 
+
+
+  ${props =>
+    props.color === 'blue' &&
+    `
+      color: ${theme.colors.blue.base};
+
+      &:hover {
+        color: ${theme.colors.blue.light};
+      }
+    `}  
+
+  ${props =>
+    props.color === 'green' &&
+    `
+      color: ${theme.colors.green.base};
+
+      &:hover {
+        color: ${theme.colors.green.light};
+      }
+    `}
+
+  ${props =>
+    props.color === 'paper' &&
+    `
+      color: ${theme.colors.paper.base};
+
+      &:hover {
+        color: ${theme.colors.paper.light};
+      }
+    `} 
+
+  ${props =>
+    props.color === 'purple' &&
+    `
+      color: ${theme.colors.purple.base};
+
+      &:hover {
+        color: ${theme.colors.purple.light};
+      }
+    `}
+
+  ${props =>
+    props.color === 'red' &&
+    `
+      color: ${theme.colors.red.base};
+
+      &:hover {
+        color: ${theme.colors.red.light};
+      }
+    `} 
+
+  ${props =>
+    props.color === 'slate' &&
+    `
+      color: ${theme.colors.slate.base};
+
+      &:hover {
+        color: ${theme.colors.slate.light};
+      }
+    `} 
+
+  ${props =>
+    props.color === 'white' &&
+    `
+      color: ${theme.colors.white};
+
+      &:hover {
+        color: ${theme.colors.paper.base};
+      }
+    `} 
 `
 
 function Link(props) {
@@ -129,16 +221,21 @@ function Link(props) {
 
   if (button) {
     return (
-      <StyledLink as="button " {...props}>
+      <StyledLink as="button" href={props.href} {...props}>
         {props.children}
       </StyledLink>
     )
   }
 
-  return <StyledLink {...props}>{props.children}</StyledLink>
+  return (
+    <StyledLink href={props.href} {...props}>
+      {props.children}
+    </StyledLink>
+  )
 }
 
 Link.propTypes = {
+  bold: PropTypes.bool,
   button: PropTypes.bool,
   color: PropTypes.oneOf([
     'aqua',
@@ -151,13 +248,17 @@ Link.propTypes = {
     'slate',
     'white',
   ]),
+  href: PropTypes.string,
   opacity: PropTypes.number,
+  size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
 }
 
 Link.defaultProps = {
+  bold: false,
   button: false,
   color: 'black',
   opacity: 1,
+  size: 'md',
 }
 
 export default Link
