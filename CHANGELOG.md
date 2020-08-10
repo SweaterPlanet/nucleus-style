@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0] (2020-08-10)
+
+
+### ✨ Improvements
+
+* add Avatar prop types, stories, tests ([#73](https://github.com/TheSweaterGuys/nucleus-style/issues/73)) ([42d0685](https://github.com/TheSweaterGuys/nucleus-style/commit/42d0685dcf9930acf2ded4e14fa632a7f98b5f6e))
+* add Link prop types, stories, tests ([#71](https://github.com/TheSweaterGuys/nucleus-style/issues/71)) ([fad37fa](https://github.com/TheSweaterGuys/nucleus-style/commit/fad37fa870472faa27e9542c1da65f721d9579d2))
+* add Tag prop types, stories, tests ([#72](https://github.com/TheSweaterGuys/nucleus-style/issues/72)) ([887b874](https://github.com/TheSweaterGuys/nucleus-style/commit/887b87417b0628e221e6c03031b8b6f3ec3fc494))
+
+### 🚨 Breaking Changes
+* `LinkButton` deprecated in favour of using `<Link button />` prop
+
 ### [0.6.1] (2020-08-05)
 
 
