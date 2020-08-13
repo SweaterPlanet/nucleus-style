@@ -1,5 +1,5 @@
 import React from 'react'
-import { withKnobs, text } from '@storybook/addon-knobs/react'
+import { withKnobs, color, text } from '@storybook/addon-knobs/react'
 import Avatar from './index'
 
 export default {
@@ -18,8 +18,8 @@ const initialsLabel = 'initials'
 
 export const Default = () => (
   <Avatar
-    bg={text(bgLabel, bgDefault)}
-    color={text(colorLabel, colorDefault)}
+    bg={color(bgLabel, bgDefault)}
+    color={color(colorLabel, colorDefault)}
     initials={text(initialsLabel, 'AB')}
   />
 )
