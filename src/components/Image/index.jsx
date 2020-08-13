@@ -6,11 +6,15 @@ import Box from '../Box/index'
 
 export const StyledImage = styled(Box)`
   border-radius: 0;
+  overflow: hidden;
+  object-fit: cover;
 
   ${props =>
     props.circle &&
     css`
       border-radius: 50%;
+      width: ${props => props.width};
+      height: ${props => props.width};
     `}
 
   ${props =>
@@ -18,14 +22,21 @@ export const StyledImage = styled(Box)`
     css`
       border-radius: 8px;
     `}
+
+    ${props =>
+      props.square &&
+      css`
+        width: ${props => props.width};
+        height: ${props => props.width};
+      `}
 `
 
 function Image(props) {
   return (
     <StyledImage
       as="img"
-      width={props.size}
-      height={props.size}
+      width={props.width}
+      height={props.height}
       src={props.src}
       {...props}
     />
@@ -35,7 +46,8 @@ function Image(props) {
 Image.propTypes = {
   circle: PropTypes.bool,
   round: PropTypes.bool,
-  size: PropTypes.string,
+  width: PropTypes.string,
+  height: PropTypes.string,
   src: PropTypes.string,
   ...Box.propTypes,
 }
