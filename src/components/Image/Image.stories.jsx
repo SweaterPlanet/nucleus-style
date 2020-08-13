@@ -15,7 +15,34 @@ export const Default = () => (
   <Image
     circle={boolean('circle', false)}
     round={boolean('round', false)}
-    size={text('size', '200px')}
+    square={boolean('square', false)}
+    width={text('width', '200px')}
+    height={text('height', '100px')}
+    src={text('src', testImg)}
+  />
+)
+
+export const Circle = () => (
+  <Image
+    circle={boolean('circle', true)}
+    width={text('width', '200px')}
+    src={text('src', testImg)}
+  />
+)
+
+export const Round = () => (
+  <Image
+    round={boolean('round', true)}
+    width={text('width', '200px')}
+    height={text('height', '100px')}
+    src={text('src', testImg)}
+  />
+)
+
+export const Square = () => (
+  <Image
+    square={boolean('square', true)}
+    width={text('width', '200px')}
     src={text('src', testImg)}
   />
 )
