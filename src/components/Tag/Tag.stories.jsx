@@ -1,6 +1,6 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
-import { withKnobs, select, text } from '@storybook/addon-knobs/react'
+import { withKnobs, color, select, text } from '@storybook/addon-knobs/react'
 import Tag from './index'
 
 export default {
@@ -24,19 +24,19 @@ const sizeOptions = {
 export const All = () => {
   return (
     <>
-      <Tag size="xs" color={text(colorLabel, colorDefault)}>
+      <Tag size="xs" color={color(colorLabel, colorDefault)}>
         Tag
       </Tag>
-      <Tag size="sm" color={text(colorLabel, colorDefault)}>
+      <Tag size="sm" color={color(colorLabel, colorDefault)}>
         Tag
       </Tag>
-      <Tag size="md" color={text(colorLabel, colorDefault)}>
+      <Tag size="md" color={color(colorLabel, colorDefault)}>
         Tag
       </Tag>
-      <Tag size="lg" color={text(colorLabel, colorDefault)}>
+      <Tag size="lg" color={color(colorLabel, colorDefault)}>
         Tag
       </Tag>
-      <Tag size="xl" color={text(colorLabel, colorDefault)}>
+      <Tag size="xl" color={color(colorLabel, colorDefault)}>
         Tag
       </Tag>
     </>
@@ -47,7 +47,7 @@ export const Default = () => {
   return (
     <>
       <Tag
-        color={text(colorLabel, colorDefault)}
+        color={color(colorLabel, colorDefault)}
         size={select(sizeLabel, sizeOptions)}
       >
         Tag
