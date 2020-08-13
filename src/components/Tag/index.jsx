@@ -1,8 +1,9 @@
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import theme from '../../theme'
 
-const Tag = styled('span')`
+export const StyledTag = styled('span')`
   font-family: ${theme.fonts.header};
   font-weight: 600;
   display: inline-block;
@@ -126,9 +127,18 @@ const Tag = styled('span')`
   `}
 `
 
+function Tag(props) {
+  return (
+    <StyledTag color={props.color} size={props.size} {...props}>
+      {props.text}
+    </StyledTag>
+  )
+}
+
 Tag.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
+  text: PropTypes.string,
 }
 
 Tag.defaultProps = {

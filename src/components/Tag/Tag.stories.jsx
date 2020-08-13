@@ -21,24 +21,36 @@ const sizeOptions = {
   xl: 'xl',
 }
 
+const textLabel = 'text'
+
 export const All = () => {
   return (
     <>
-      <Tag size="xs" color={color(colorLabel, colorDefault)}>
-        Tag
-      </Tag>
-      <Tag size="sm" color={color(colorLabel, colorDefault)}>
-        Tag
-      </Tag>
-      <Tag size="md" color={color(colorLabel, colorDefault)}>
-        Tag
-      </Tag>
-      <Tag size="lg" color={color(colorLabel, colorDefault)}>
-        Tag
-      </Tag>
-      <Tag size="xl" color={color(colorLabel, colorDefault)}>
-        Tag
-      </Tag>
+      <Tag
+        size="xs"
+        color={color(colorLabel, colorDefault)}
+        text={text(textLabel, 'Tag')}
+      />
+      <Tag
+        size="sm"
+        color={color(colorLabel, colorDefault)}
+        text={text(textLabel, 'Tag')}
+      />
+      <Tag
+        size="md"
+        color={color(colorLabel, colorDefault)}
+        text={text(textLabel, 'Tag')}
+      />
+      <Tag
+        size="lg"
+        color={color(colorLabel, colorDefault)}
+        text={text(textLabel, 'Tag')}
+      />
+      <Tag
+        size="xl"
+        color={color(colorLabel, colorDefault)}
+        text={text(textLabel, 'Tag')}
+      />
     </>
   )
 }
@@ -49,9 +61,8 @@ export const Default = () => {
       <Tag
         color={color(colorLabel, colorDefault)}
         size={select(sizeLabel, sizeOptions)}
-      >
-        Tag
-      </Tag>
+        text={text(textLabel, 'Tag')}
+      />
     </>
   )
 }
@@ -59,12 +70,11 @@ export const Default = () => {
 export const Example = () => {
   return (
     <>
-      <Tag color="#6CB01B" size={select(sizeLabel, sizeOptions)}>
-        🌱 Environmental
-      </Tag>
-      <Tag color="#2FA5FE" size={select(sizeLabel, sizeOptions)}>
-        💎 Premium Line
-      </Tag>
+      <Tag
+        color={color(colorLabel, '#6CB01B')}
+        size={select(sizeLabel, sizeOptions)}
+        text={text(textLabel, '🌱 Environmental')}
+      />
     </>
   )
 }

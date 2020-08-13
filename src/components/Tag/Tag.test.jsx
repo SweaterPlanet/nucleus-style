@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Tag from '.'
+import Tag, { StyledTag } from '.'
 
 describe('Tag', () => {
   it('renders correctly', () => {
@@ -9,9 +9,11 @@ describe('Tag', () => {
     expect(test).toMatchSnapshot()
   })
 
-  it('renders as <span> by default', () => {
+  it('renders as <div> by default', () => {
     const test = shallow(<Tag />)
-    expect(test.type()).toEqual('span')
+    const test2 = shallow(<StyledTag />)
+    expect(test.type()).toEqual(StyledTag)
+    expect(test2.type()).toEqual('span')
   })
 
   it('renders as color: black by default', () => {
@@ -34,5 +36,11 @@ describe('Tag', () => {
     const testProp = 'sm'
     const test = shallow(<Tag size={testProp} />)
     expect(test.prop('size')).toBe(testProp)
+  })
+
+  it('respects the text prop', () => {
+    const testProp = 'Tag'
+    const test = shallow(<Tag text={testProp} />)
+    expect(test.prop('text')).toBe(testProp)
   })
 })
