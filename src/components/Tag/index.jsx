@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import theme from '../../theme'
 
-const StyledTag = styled('span')`
+export const StyledTag = styled('span')`
   font-family: ${theme.fonts.header};
   font-weight: 600;
   display: inline-block;
