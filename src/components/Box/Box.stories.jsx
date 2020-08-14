@@ -8,7 +8,7 @@ export default {
   decorators: [withKnobs],
 }
 
-const bgLabel = 'Background'
+const bgLabel = 'background-color'
 const bgOptions = {
   aqua: 'aqua',
   black: 'black',
@@ -21,7 +21,7 @@ const bgOptions = {
   white: 'white',
 }
 
-const colorLabel = 'Color'
+const colorLabel = 'color'
 const colorOptions = {
   aqua: 'aqua',
   black: 'black',
@@ -38,6 +38,7 @@ export const Default = () => (
   <Box
     bg={select(bgLabel, bgOptions, 'paper')}
     color={select(colorLabel, colorOptions, 'black')}
+    cursor={text('cursor', 'auto')}
     display={text('display', '')}
     height={text('height', '80%')}
     margin={text('margin', '')}

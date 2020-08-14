@@ -14,7 +14,7 @@ export default {
   decorators: [withKnobs],
 }
 
-const bgLabel = 'Background'
+const bgLabel = 'background-color'
 const bgOptions = {
   aqua: 'aqua',
   black: 'black',
@@ -27,7 +27,7 @@ const bgOptions = {
   white: 'white',
 }
 
-const colorLabel = 'Color'
+const colorLabel = 'color'
 const colorOptions = {
   aqua: 'aqua',
   black: 'black',
@@ -44,20 +44,21 @@ export const Default = () => (
   <Card
     bg={select(bgLabel, bgOptions, 'paper')}
     color={select(colorLabel, colorOptions, 'black')}
-    display={text('Display', '')}
-    height={text('Height', '80%')}
-    margin={text('Margin', '')}
-    maxHeight={text('Max Height', '')}
-    maxWidth={text('Max Width', '')}
-    minHeight={text('Min Height', '')}
-    minWidth={text('Min Width', '')}
-    opacity={number('Opacity', '1')}
-    overflow={text('Overflow', '')}
-    overflowX={text('Overflow', '')}
-    overflowY={text('Overflow', '')}
-    padding={text('Padding', '40px')}
-    round={boolean('Round', false)}
-    width={text('Width', '20%')}
+    cursor={text('cursor', 'auto')}
+    display={text('display', '')}
+    height={text('height', '80%')}
+    margin={text('margin', '')}
+    maxHeight={text('maxHeight', '')}
+    maxWidth={text('maxWidth', '')}
+    minHeight={text('minHeight', '')}
+    minWidth={text('minWidth', '')}
+    opacity={number('opacity', '1')}
+    overflow={text('overflow', '')}
+    overflowX={text('overflowX', '')}
+    overflowY={text('overflowY', '')}
+    padding={text('padding', '40px')}
+    round={boolean('round', false)}
+    width={text('width', '20%')}
   >
     Card
   </Card>

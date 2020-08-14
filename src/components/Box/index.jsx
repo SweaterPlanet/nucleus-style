@@ -30,6 +30,9 @@ export const StyledBox = styled.div`
   padding-bottom: ${props => props.paddingBottom || props.pb};
   padding-left: ${props => props.paddingLeft || props.pl};
 
+  /* controls */
+  cursor: ${props => props.cursor};
+
   ${props =>
     props.color === 'aqua' &&
     `
@@ -168,6 +171,7 @@ Box.propTypes = {
     'slate',
     'white',
   ]),
+  cursor: PropTypes.string,
   d: PropTypes.string,
   display: PropTypes.string,
   h: PropTypes.string,
