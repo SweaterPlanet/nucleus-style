@@ -17,6 +17,14 @@ export const StyledTag = styled.div`
   }
 
   ${props =>
+    props.button &&
+    `
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+  `}
+
+  ${props =>
     props.size === 'xs' &&
     `
     font-size: ${theme.fontSizes.p.xs};
