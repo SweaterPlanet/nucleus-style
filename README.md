@@ -53,3 +53,9 @@ import { Button, Text } from '@thesweaterguys/nucleus-style'
 ## Contributing
 
 See the [contributing guide](https://github.com/TheSweaterGuys/nucleus-style/blob/master/CHANGELOG.md).
+
+<hr>
+
+**@owner:** [The Sweater Guys inc.](https://github.com/sweaterguys)
+
+**@author:** [Loreina Chew](https://github.com/loreina)
