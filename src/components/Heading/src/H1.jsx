@@ -6,6 +6,8 @@ const H1 = styled.h1`
   font-family: ${theme.fonts.header};
   font-size: ${theme.fontSizes.h1.xs};
   font-weight: 600;
+	margin: 0;
+	background-color: lime;
   opacity: ${props => props.opacity};
 
   ${props =>
