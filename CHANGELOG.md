@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0] (2020-08-14)
+
+
+### ✨ Improvements
+
+* `Box` and `Card` now accepts a `cursor` prop ([#82](https://github.com/TheSweaterGuys/nucleus-style/issues/82)) ([7b304e8](https://github.com/TheSweaterGuys/nucleus-style/commit/7b304e89601a12c7566e13985fb617d082c854d6))
+* `Image` accepts `height` prop for rectangular sizes ([#76](https://github.com/TheSweaterGuys/nucleus-style/issues/76)) ([8e53c54](https://github.com/TheSweaterGuys/nucleus-style/commit/8e53c54d09dc7452b96b5a5b1677237345f2cc1c))
+* `Tag` has a `text` prop instead of scraping from component children ([#78](https://github.com/TheSweaterGuys/nucleus-style/issues/78)) ([f0011fb](https://github.com/TheSweaterGuys/nucleus-style/commit/f0011fb7f082623aaa88c99a251f379d9147633d))
+* `Box` supports a `border` prop ([#86](https://github.com/TheSweaterGuys/nucleus-style/issues/86)) ([c57e713](https://github.com/TheSweaterGuys/nucleus-style/commit/c57e713304fefae24842346c6122e87e7ae1ea08))
+* Tag has `button` prop to toggle render as `<button>` instead of `<div>` ([#85](https://github.com/TheSweaterGuys/nucleus-style/issues/85))
+
+### 🐛 Bug Fixes
+
+* remove Heading default color ([08d210c](https://github.com/TheSweaterGuys/nucleus-style/commit/08d210ce4bcd00fbaced0c7049e4558ae1c54724))
+
+### 🚨 Breaking Changes
+
+* `Tag` now default renders as `<div>` instead of `<span>` ([#85](https://github.com/TheSweaterGuys/nucleus-style/issues/85))
+* `Image` component's `size` prop is deprecated in favour of using `width` and `height` props ([#76](https://github.com/TheSweaterGuys/nucleus-style/issues/76))
+
 ## [0.7.0] (2020-08-10)
 
 
