@@ -22,6 +22,12 @@ describe('Box', () => {
     expect(test.prop('bg')).toBe(testProp)
   })
 
+  it('respects the border prop', () => {
+    const testProp = '2px solid black'
+    const test = shallow(<Box border={testProp} />)
+    expect(test.prop('border')).toBe(testProp)
+  })
+
   it('respects the color prop', () => {
     const testProp = 'aqua'
     const test = shallow(<Box color={testProp} />)

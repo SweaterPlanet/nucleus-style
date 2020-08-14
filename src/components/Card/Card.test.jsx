@@ -15,6 +15,12 @@ describe('Card', () => {
     expect(test.prop('bg')).toBe(testProp)
   })
 
+  it('respects the border prop', () => {
+    const testProp = '2px solid black'
+    const test = shallow(<Card border={testProp} />)
+    expect(test.prop('border')).toBe(testProp)
+  })
+
   it('respects the color prop', () => {
     const testProp = 'aqua'
     const test = shallow(<Card color={testProp} />)

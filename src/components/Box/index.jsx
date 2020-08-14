@@ -33,6 +33,9 @@ export const StyledBox = styled.div`
   /* controls */
   cursor: ${props => props.cursor};
 
+  /* styles */
+  border: ${props => props.border};
+
   ${props =>
     props.color === 'aqua' &&
     `
@@ -160,6 +163,7 @@ Box.propTypes = {
     'slate',
     'white',
   ]),
+  border: PropTypes.string,
   color: PropTypes.oneOf([
     'aqua',
     'black',
