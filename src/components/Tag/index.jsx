@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import theme from '../../theme'
 
-export const StyledTag = styled('span')`
+export const StyledTag = styled.div`
   font-family: ${theme.fonts.header};
   font-weight: 600;
   display: inline-block;
@@ -15,6 +15,14 @@ export const StyledTag = styled('span')`
   &:hover {
     text-decoration: none;
   }
+
+  ${props =>
+    props.button &&
+    `
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+  `}
 
   ${props =>
     props.size === 'xs' &&
@@ -128,6 +136,15 @@ export const StyledTag = styled('span')`
 `
 
 function Tag(props) {
+  const button = props.button
+
+  if (button) {
+    return (
+      <StyledTag as="button" color={props.color} size={props.size} {...props}>
+        {props.text}
+      </StyledTag>
+    )
+  }
   return (
     <StyledTag color={props.color} size={props.size} {...props}>
       {props.text}
@@ -136,12 +153,14 @@ function Tag(props) {
 }
 
 Tag.propTypes = {
+  button: PropTypes.bool,
   color: PropTypes.string,
   size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
   text: PropTypes.string,
 }
 
 Tag.defaultProps = {
+  button: false,
   color: '#000000',
   size: 'xs',
 }
