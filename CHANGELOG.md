@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.2] (2020-08-14)
+
+
+### 🐛 Bug Fixes
+
+* remove Box default color ([#88](https://github.com/TheSweaterGuys/nucleus-style/issues/88)) ([ea0786f](https://github.com/TheSweaterGuys/nucleus-style/commit/ea0786f6b82544d41b94fa93c352abc179f0f13e))
+* remove default margins from Heading and Text ([#87](https://github.com/TheSweaterGuys/nucleus-style/issues/87)) ([420603e](https://github.com/TheSweaterGuys/nucleus-style/commit/420603e67bf4812b95e0555c4a7e81b7edb3b644))
+
 ### [0.8.1] (2020-08-14)
 
 
