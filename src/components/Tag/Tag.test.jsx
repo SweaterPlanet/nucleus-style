@@ -13,7 +13,12 @@ describe('Tag', () => {
     const test = shallow(<Tag />)
     const test2 = shallow(<StyledTag />)
     expect(test.type()).toEqual(StyledTag)
-    expect(test2.type()).toEqual('span')
+    expect(test2.type()).toEqual('div')
+  })
+
+  it('renders as <button> with button prop', () => {
+    const test = shallow(<Tag button />)
+    expect(test.prop('button')).toBeTruthy()
   })
 
   it('renders as color: black by default', () => {
