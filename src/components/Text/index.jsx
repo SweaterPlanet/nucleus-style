@@ -7,6 +7,7 @@ export const StyledText = styled.p`
   font-family: ${theme.fonts.body};
   font-size: ${theme.fontSizes.p.xs};
   font-weight: ${props => (props.bold ? 600 : 400)};
+	margin: 0;
   opacity: ${props => props.opacity};
   
   ${props =>
