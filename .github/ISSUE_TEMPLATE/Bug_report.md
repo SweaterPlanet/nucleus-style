@@ -4,10 +4,6 @@ about: Create a report to help us improve
 labels: bug
 ---
 
-## Checklist:
-
-- [ ] No similar/duplicate issue found
-
 ## What's the bug?
 
 - Describe the bug here
@@ -19,3 +15,7 @@ labels: bug
 ### Actual behaviour:
 
 ### Screenshots:
+
+## Checklist:
+
+- [ ] No similar/duplicate issue found
