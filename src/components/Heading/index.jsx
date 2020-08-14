@@ -35,7 +35,6 @@ Heading.propTypes = {
 }
 
 Heading.defaultProps = {
-  color: 'black',
   opacity: 1,
 }
 
