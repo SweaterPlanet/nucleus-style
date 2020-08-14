@@ -211,8 +211,4 @@ Box.propTypes = {
   width: PropTypes.string,
 }
 
-Box.defaultProps = {
-  color: 'black',
-}
-
 export default Box
