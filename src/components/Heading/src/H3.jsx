@@ -7,7 +7,6 @@ const H3 = styled.h3`
   font-size: ${theme.fontSizes.h3.xs};
   font-weight: 400;
 	margin: 0;
-	background-color: yellow;
   opacity: ${props => props.opacity};
 
   ${props =>

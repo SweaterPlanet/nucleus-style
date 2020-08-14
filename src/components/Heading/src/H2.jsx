@@ -7,7 +7,6 @@ const H2 = styled.h2`
   font-size: ${theme.fontSizes.h2.xs};
   font-weight: 400;
 	margin: 0;
-	background-color: orange;
   opacity: ${props => props.opacity};
 
   ${props =>

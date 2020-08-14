@@ -7,7 +7,6 @@ const H4 = styled.h4`
   font-size: ${theme.fontSizes.h4.xs};
   font-weight: 600;
 	margin: 0;
-	background-color: aqua;
   opacity: ${props => props.opacity};
 
   ${props =>
