@@ -37,6 +37,7 @@ const colorOptions = {
 export const Default = () => (
   <Box
     bg={select(bgLabel, bgOptions, 'paper')}
+    border={text('border', '')}
     color={select(colorLabel, colorOptions, 'black')}
     cursor={text('cursor', 'auto')}
     display={text('display', '')}
