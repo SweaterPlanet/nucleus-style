@@ -2,13 +2,16 @@
   "plugins": [
     "conventional-commits",
     "git-tag",
-    "released",
+    [
+      "released",
       {
-        "label": "released",
+        "label": "released"
       }
+    ]
   ],
   "owner": "thesweaterguys",
   "repo": "nucleus-style",
+  "author": "@loreina <loreina.chew@gmail.com>",
   "onlyPublishWithReleaseLabel": true,
   "labels": [
     {

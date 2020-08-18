@@ -16,7 +16,7 @@
     "storybook": "start-storybook -p 9000 -c .storybook",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
-    "version": "npm version `auto version` -m 'release: %s'"
+    "version": "npm version `auto version` -m 'release: %s [skip ci]'"
   },
   "files": [
     "dist"
