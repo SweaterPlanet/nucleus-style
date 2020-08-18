@@ -1,7 +1,12 @@
 {
   "plugins": [
     "conventional-commits",
-    "git-tag"
+    "git-tag",
+    "released",
+      {
+        "label": "released",
+        "message": "🚀 released in %VERSION 🚀"
+      }
   ],
   "owner": "thesweaterguys",
   "repo": "nucleus-style",
