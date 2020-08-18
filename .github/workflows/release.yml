@@ -1,0 +1,48 @@
+name: release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Skip CI
+        uses: veggiemonk/skip-commit@master
+        env:
+          COMMIT_FILTER: skip ci
+
+      - name: Prepare repository
+        env:
+          GH_TOKEN: ${{ secrets.REPO_SCOPE_TOKEN }}
+        run: |
+          git checkout "${GITHUB_REF:11}" --
+          git remote rm origin
+          git remote add origin "https://$GH_TOKEN@github.com/thesweaterguys/nucleus-style"
+          git fetch origin
+          git branch --set-upstream-to origin/master
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ secrets.REPO_SCOPE_TOKEN }}
+        run: |
+          npm install
+          npm run version
+          npm run release
