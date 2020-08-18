@@ -41,6 +41,7 @@ export const Default = () => (
     alignSelf={text('alignSelf', '')}
     bg={select(bgLabel, bgOptions, 'paper')}
     color={select(colorLabel, colorOptions, 'black')}
+    cursor={text('cursor', 'auto')}
     display={text('display', '')}
     flex={text('flex', '')}
     flexBasis={text('flexBasis', '')}
