@@ -1,4 +1,11 @@
 {
+  "plugins": [
+    "conventional-commits",
+    "git-tag"
+  ],
+  "owner": "thesweaterguys",
+  "repo": "nucleus-style",
+  "onlyPublishWithReleaseLabel": true,
   "labels": [
     {
       "name": "major",
@@ -40,5 +47,5 @@
       "name": "fix",
       "changelogTitle": "🐛 Bug Fixes"
     }
-  ]
+	]
 }
