@@ -38,6 +38,9 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "@auto-it/conventional-commits": "^9.50.11",
+    "@auto-it/git-tag": "^9.50.11",
+    "@auto-it/released": "^9.50.11",
     "@babel/core": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
