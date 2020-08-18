@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.9.0](https://github.com/TheSweaterGuys/nucleus-style/compare/v0.8.2...v0.9.0) (2020-08-18)
+
+
+### 🚀 Features
+
+* add Switch component ([#91](https://github.com/TheSweaterGuys/nucleus-style/issues/91)) ([16f6159](https://github.com/TheSweaterGuys/nucleus-style/commit/16f61593f35c255128e85b3dacd2d5639e25f6a7))
+
+
+### ✨ Improvements
+
+* add cursor to Flex ([#90](https://github.com/TheSweaterGuys/nucleus-style/issues/90)) ([1349d99](https://github.com/TheSweaterGuys/nucleus-style/commit/1349d99aada5551f445896bda1b7cdbc758ffed2))
+
 ### [0.8.2] (2020-08-14)
 
 
