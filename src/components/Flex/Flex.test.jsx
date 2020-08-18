@@ -39,6 +39,12 @@ describe('Flex', () => {
     expect(test.prop('color')).toBe(testProp)
   })
 
+  it('respects the cursor prop', () => {
+    const testProp = 'pointer'
+    const test = shallow(<Flex cursor={testProp} />)
+    expect(test.prop('cursor')).toBe(testProp)
+  })
+
   it('respects the display prop', () => {
     const testProp = 'flex'
     const test = shallow(<Flex display={testProp} />)
