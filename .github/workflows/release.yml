@@ -1,0 +1,21 @@
+name: release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Bump version
+        run: npm run version
+
+      - name: Generate changelog and Github release
+        run: npm run release
