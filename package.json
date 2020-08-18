@@ -70,8 +70,7 @@
     "react-is": "^16.13.1",
     "rollup": "^2.22.1",
     "rollup-plugin-filesize": "^9.0.2",
-    "rollup-plugin-peer-deps-external": "^2.2.3",
-    "standard-version": "^8.0.2"
+    "rollup-plugin-peer-deps-external": "^2.2.3"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
