@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import theme from '../../theme'
 
@@ -39,7 +40,7 @@ const Input = styled.input`
   height: 2em;
 
   &:checked + ${Label} {
-    background: ${theme.colors.aqua.base};
+    background: ${theme.colors.blue.base};
 
     &::after {
       content: '';
@@ -51,7 +52,7 @@ const Input = styled.input`
   }
 `
 
-const Switch = () => {
+function Switch(props) {
   return (
     <>
       <Box>
