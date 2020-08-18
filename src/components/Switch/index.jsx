@@ -40,7 +40,47 @@ const Input = styled.input`
   height: 2em;
 
   &:checked + ${Label} {
-    background: ${theme.colors.blue.base};
+    ${props =>
+      props.color === 'aqua' &&
+      `
+      background: ${theme.colors.aqua.base};
+    `}  
+
+    ${props =>
+      props.color === 'black' &&
+      `
+      background: ${theme.colors.black};
+    `} 
+
+    ${props =>
+      props.color === 'blue' &&
+      `
+      background: ${theme.colors.blue.base};
+    `}  
+
+    ${props =>
+      props.color === 'green' &&
+      `
+      background: ${theme.colors.green.base};
+    `}
+
+    ${props =>
+      props.color === 'purple' &&
+      `
+      background: ${theme.colors.purple.base};
+    `}
+
+    ${props =>
+      props.color === 'red' &&
+      `
+      background: ${theme.colors.red.base};
+    `} 
+
+    ${props =>
+      props.color === 'slate' &&
+      `
+      background: ${theme.colors.slate.base};
+    `} 
 
     &::after {
       content: '';
@@ -56,11 +96,27 @@ function Switch(props) {
   return (
     <>
       <Box>
-        <Input id="checkbox" type="checkbox" />
+        <Input color={props.color} id="checkbox" type="checkbox" />
         <Label htmlFor="checkbox" />
       </Box>
     </>
   )
+}
+
+Switch.propTypes = {
+  color: PropTypes.oneOf([
+    'aqua',
+    'black',
+    'blue',
+    'green',
+    'purple',
+    'red',
+    'slate',
+  ]),
+}
+
+Switch.defaultProps = {
+  color: 'blue',
 }
 
 export default Switch
