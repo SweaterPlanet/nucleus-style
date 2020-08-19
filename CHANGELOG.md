@@ -1,3 +1,15 @@
+# v0.9.3 (Wed Aug 19 2020)
+
+#### ✨ Improvements
+
+- ci: update release workflow to use auto shipit [#97](https://github.com/TheSweaterGuys/nucleus-style/pull/97) ([@loreina](https://github.com/loreina))
+
+#### Authors: 1
+
+- Loreina Chew ([@loreina](https://github.com/loreina))
+
+---
+
 # v0.9.2 (Wed Aug 19 2020)
 
 #### ✨ Improvements
