@@ -1,3 +1,16 @@
+# v0.9.2 (Wed Aug 19 2020)
+
+#### ✨ Improvements
+
+- ci: add workflow to publish package on new release [#96](https://github.com/TheSweaterGuys/nucleus-style/pull/96) ([@loreina](https://github.com/loreina))
+- docs: reformat changelog to match auto format [#95](https://github.com/TheSweaterGuys/nucleus-style/pull/95) ([@loreina](https://github.com/loreina))
+
+#### Authors: 1
+
+- Loreina Chew ([@loreina](https://github.com/loreina))
+
+---
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
