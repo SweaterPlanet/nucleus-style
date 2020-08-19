@@ -33,5 +33,4 @@ jobs:
           GH_TOKEN: ${{ secrets.REPO_SCOPE_TOKEN }}
         run: |
           npm ci
-          npx auto shipit -m "release [skip ci]"
-          npm version
+          npm run release
