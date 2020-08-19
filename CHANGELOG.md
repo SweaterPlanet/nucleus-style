@@ -42,6 +42,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 # 0.8.0 (2020-08-14)
 
+
 #### ✨ Improvements
 
 * `Box` and `Card` now accepts a `cursor` prop ([#82](https://github.com/TheSweaterGuys/nucleus-style/issues/82)) ([7b304e8](https://github.com/TheSweaterGuys/nucleus-style/commit/7b304e89601a12c7566e13985fb617d082c854d6))
