@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.9.1](https://github.com/TheSweaterGuys/nucleus-style/compare/v0.9.0...v0.9.1) (2020-08-18)
+
+ #### ✨ Improvements
+
+- ci: fix release workflow [#94](https://github.com/TheSweaterGuys/nucleus-style/pull/94) ([@loreina](https://github.com/loreina))
+- ci: setup auto [#93](https://github.com/TheSweaterGuys/nucleus-style/pull/93) ([@loreina](https://github.com/loreina))
+
+#### Authors: 1
+
+- Loreina Chew ([@loreina](https://github.com/loreina))
+
 ## [0.9.0](https://github.com/TheSweaterGuys/nucleus-style/compare/v0.8.2...v0.9.0) (2020-08-18)
 
 
