@@ -13,6 +13,9 @@
   "repo": "nucleus-style",
   "author": "@loreina <loreina.chew@gmail.com>",
   "onlyPublishWithReleaseLabel": true,
+  "shipit": {
+    "message": "release: %version [skip ci]",
+  }
   "labels": [
     {
       "name": "major",

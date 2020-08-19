@@ -34,3 +34,4 @@ jobs:
         run: |
           npm ci
           npx auto shipit
+          npm run version
