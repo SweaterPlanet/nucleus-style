@@ -1,3 +1,15 @@
+# v0.9.4 (Wed Aug 19 2020)
+
+#### ✨ Improvements
+
+- ci: update publish workflow [#98](https://github.com/TheSweaterGuys/nucleus-style/pull/98) ([@loreina](https://github.com/loreina))
+
+#### Authors: 1
+
+- Loreina Chew ([@loreina](https://github.com/loreina))
+
+---
+
 # v0.9.3 (Wed Aug 19 2020)
 
 #### ✨ Improvements
