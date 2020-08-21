@@ -1,3 +1,15 @@
+# v0.9.6 (Fri Aug 21 2020)
+
+#### ✨ Improvements
+
+- ci: use github token to publish package [#100](https://github.com/TheSweaterGuys/nucleus-style/pull/100) ([@loreina](https://github.com/loreina))
+
+#### Authors: 1
+
+- Loreina Chew ([@loreina](https://github.com/loreina))
+
+---
+
 # v0.9.5 (Thu Aug 20 2020)
 
 #### ✨ Improvements
