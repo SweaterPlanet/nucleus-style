@@ -22,6 +22,11 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@thesweaterguys'
 
+      - name: Login to registry
+        run: npm login
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Publish package
         run: npm publish
         env:
