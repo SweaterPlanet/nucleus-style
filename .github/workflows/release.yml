@@ -28,10 +28,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: Create release
+        run: npx auto shipit -m "release [skip ci]"
         env:
           GH_TOKEN: ${{ secrets.REPO_SCOPE_TOKEN }}
-        run: |
-          npm ci
-          npx auto shipit -m "release [skip ci]"
-          npm version `npx auto version`
+
+      - name: Bump version
+        run: npm version `npx auto version`
+        env:
+          GH_TOKEN: ${{ secrets.REPO_SCOPE_TOKEN }}
