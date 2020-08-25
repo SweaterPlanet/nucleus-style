@@ -37,6 +37,6 @@ jobs:
           GH_TOKEN: ${{ secrets.REPO_SCOPE_TOKEN }}
 
       - name: Bump version
-        run: npm version `npx auto version`
+        run: npm version `auto version`
         env:
           GH_TOKEN: ${{ secrets.REPO_SCOPE_TOKEN }}
