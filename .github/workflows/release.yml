@@ -34,4 +34,4 @@ jobs:
         run: |
           npm ci
           npx auto shipit -m "release [skip ci]"
-          npm run version
+          npm version `npx auto version`
