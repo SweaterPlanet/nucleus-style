@@ -1,6 +1,6 @@
 {
   "name": "@thesweaterguys/nucleus-style",
-  "version": "0.9.9",
+  "version": "0.9.10",
   "description": "React component library for The Sweater Guys",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
