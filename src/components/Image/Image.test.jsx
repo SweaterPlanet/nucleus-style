@@ -73,6 +73,12 @@ describe('Image', () => {
     expect(test.prop('minWidth')).toBe(testProp)
   })
 
+  it('respects the objectFit prop', () => {
+    const testProp = 'contain'
+    const test = shallow(<Image objectFit={testProp} />)
+    expect(test.prop('objectFit')).toBe(testProp)
+  })
+
   it('respects the overflow prop', () => {
     const testProp = 'hidden'
     const test = shallow(<Image overflow={testProp} />)
