@@ -45,7 +45,13 @@ function Image(props) {
 
 Image.propTypes = {
   circle: PropTypes.bool,
-  objectFit: PropTypes.string,
+  objectFit: PropTypes.oneOf([
+    'none',
+    'contain',
+    'cover',
+    'fill',
+    'scale-down',
+  ]),
   round: PropTypes.bool,
   width: PropTypes.string,
   height: PropTypes.string,
