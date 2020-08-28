@@ -7,7 +7,7 @@ import Box from '../Box/index'
 export const StyledImage = styled(Box)`
   border-radius: 0;
   overflow: hidden;
-  object-fit: cover;
+  object-fit: ${props => props.objectFit};
 
   ${props =>
     props.circle &&
@@ -45,6 +45,7 @@ function Image(props) {
 
 Image.propTypes = {
   circle: PropTypes.bool,
+  objectFit: PropTypes.string,
   round: PropTypes.bool,
   width: PropTypes.string,
   height: PropTypes.string,
@@ -54,6 +55,7 @@ Image.propTypes = {
 
 Image.defaultProps = {
   circle: false,
+  objectFit: 'cover',
   round: false,
   ...Box.defaultProps,
 }
