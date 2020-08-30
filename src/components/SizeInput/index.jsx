@@ -164,6 +164,7 @@ function SizeInput(props) {
 }
 
 SizeInput.propTypes = {
+  dark: PropTypes.bool,
   label: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
   placeholder: PropTypes.number,
   red: PropTypes.bool,
@@ -171,6 +172,7 @@ SizeInput.propTypes = {
 }
 
 SizeInput.defaultProps = {
+  dark: false,
   placeholder: 0,
   red: false,
 }
