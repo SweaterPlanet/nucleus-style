@@ -59,6 +59,10 @@ const Input = styled.input`
     margin: 0;
   }
 
+  :focus::placeholder {
+    color: transparent;
+  }
+
   ::-webkit-input-placeholder {
     color: ${theme.colors.slate.base};
     font-size: 16px;
