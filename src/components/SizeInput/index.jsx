@@ -19,6 +19,12 @@ const InputBox = styled(Flex)`
   margin: 0 auto;
   position: relative;
   direction: row;
+
+  ${props =>
+    props.dark &&
+    `
+     background-color: ${theme.colors.slate.light};
+  `}
 `
 
 const Label = styled.p`
@@ -30,6 +36,12 @@ const Label = styled.p`
   color: ${theme.colors.slate.base};
   text-align: left;
   text-transform: uppercase;
+
+  ${props =>
+    props.dark &&
+    `
+     color: ${theme.colors.paper.base};
+  `}
 `
 
 const Input = styled.input`
@@ -40,6 +52,7 @@ const Input = styled.input`
   outline: 0;
   background: transparent;
   text-align: center;
+  color: ${theme.colors.slate.base};
   border-bottom: 1px solid ${theme.colors.slate.base};
   width: 20px;
   height: 16px;
@@ -84,6 +97,17 @@ const Input = styled.input`
     padding: 0;
     margin: 0;
   }
+
+  ${props =>
+    props.dark &&
+    `
+    color: ${theme.colors.paper.base};
+    border-bottom: 1px solid ${theme.colors.paper.base};
+
+    ::placeholder {
+      color: ${theme.colors.paper.base};
+    }
+  `}
 `
 
 const Caption = styled.p`
@@ -105,12 +129,18 @@ function SizeInput(props) {
     return (
       <>
         <Wrapper flexDirection="column">
-          <InputBox>
-            <Label bold>{props.label}</Label>
-            <Input type="number" placeholder={props.placeholder} />
+          <InputBox dark={props.dark}>
+            <Label dark={props.dark}>{props.label}</Label>
+            <Input
+              dark={props.dark}
+              type="number"
+              placeholder={props.placeholder}
+            />
           </InputBox>
           <Box>
-            <Caption red={props.red}>{props.stock} in stock</Caption>
+            <Caption dark={props.dark} red={props.red}>
+              {props.stock} in stock
+            </Caption>
           </Box>
         </Wrapper>
       </>
@@ -120,9 +150,13 @@ function SizeInput(props) {
   return (
     <>
       <Wrapper flexDirection="column">
-        <InputBox>
-          <Label bold>{props.label}</Label>
-          <Input type="number" placeholder={props.placeholder} />
+        <InputBox dark={props.dark}>
+          <Label dark={props.dark}>{props.label}</Label>
+          <Input
+            dark={props.dark}
+            type="number"
+            placeholder={props.placeholder}
+          />
         </InputBox>
       </Wrapper>
     </>
