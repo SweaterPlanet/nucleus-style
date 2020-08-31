@@ -77,10 +77,32 @@ const Meter = styled.div`
 
 function ProgressBar(props) {
   return (
-    <Bar>
-      <Meter value="20" color="blue"></Meter>
+    <Bar dark={props.dark}>
+      <Meter value={props.value} color={props.color} />
     </Bar>
   )
+}
+
+ProgressBar.propTypes = {
+  color: PropTypes.oneOf([
+    'aqua',
+    'black',
+    'blue',
+    'green',
+    'paper',
+    'purple',
+    'red',
+    'slate',
+    'white',
+  ]),
+  dark: PropTypes.bool,
+  value: PropTypes.number,
+}
+
+ProgressBar.defaultProps = {
+  color: 'blue',
+  dark: false,
+  value: 0,
 }
 
 export default ProgressBar
