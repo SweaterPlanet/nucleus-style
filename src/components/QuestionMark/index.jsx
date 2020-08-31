@@ -41,11 +41,11 @@ function QuestionMark(props) {
 }
 
 QuestionMark.propTypes = {
-	dark = PropTypes.bool
+  dark: PropTypes.bool,
 }
 
 QuestionMark.defaultProps = {
-	dark: false
+  dark: false,
 }
 
 export default QuestionMark
