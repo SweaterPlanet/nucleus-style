@@ -96,7 +96,13 @@ function Switch(props) {
   return (
     <>
       <Box>
-        <Input color={props.color} id="checkbox" type="checkbox" />
+        <Input
+          color={props.color}
+          id="checkbox"
+          type="checkbox"
+          checked={props.checked}
+          onChange={props.onChange}
+        />
         <Label htmlFor="checkbox" />
       </Box>
     </>
