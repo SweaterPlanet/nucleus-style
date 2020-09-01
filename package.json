@@ -14,6 +14,7 @@
     "lint": "eslint \"**/*.{js,jsx}\" && echo 'Lint complete.'",
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9000 -c .storybook",
+    "storybook:build": "npm run deploy",
     "test": "jest",
     "test:watch": "npm run test -- --watch"
   },
