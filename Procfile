@@ -1,1 +1,1 @@
-web: npm run deploy
+web: npx http-server build
