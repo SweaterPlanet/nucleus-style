@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-  withKnobs,
-  boolean,
-  number,
-  select,
-} from '@storybook/addon-knobs/react'
+import { withKnobs, boolean, number, text } from '@storybook/addon-knobs/react'
 import SizeInput from './index'
 
 export default {
@@ -13,12 +8,10 @@ export default {
   decorators: [withKnobs],
 }
 
-const labelOptions = ['xs', 'sm', 'md', 'lg', 'xl']
-
 export const Default = () => (
   <SizeInput
     dark={boolean('dark', false)}
-    label={select('label', labelOptions, 'xs')}
+    label={text('label', 'xs')}
     placeholder={number('placeholder', '0')}
     red={boolean('red', false)}
     stock={number('stock', '')}
@@ -28,7 +21,7 @@ export const Default = () => (
 export const Dark = () => (
   <SizeInput
     dark={boolean('dark', true)}
-    label={select('label', labelOptions, 'xs')}
+    label={text('label', 'xs')}
     placeholder={number('placeholder', '0')}
     red={boolean('red', false)}
     stock={number('stock', '')}
@@ -73,7 +66,7 @@ export const Group = () => (
 export const Caption = () => (
   <SizeInput
     dark={boolean('dark', false)}
-    label={select('label', labelOptions, 'xs')}
+    label={text('label', 'xs')}
     placeholder={number('placeholder', '0')}
     red={boolean('red', true)}
     stock={number('stock', '3')}
