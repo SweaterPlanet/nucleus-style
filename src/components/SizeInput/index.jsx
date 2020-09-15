@@ -13,7 +13,7 @@ const Wrapper = styled(Flex)`
 `
 
 const InputBox = styled(Flex)`
-  width: 72px;
+  width: min-content;
   height: 36px;
   background-color: ${theme.colors.paper.dark};
   margin: 0 auto;
@@ -165,7 +165,7 @@ function SizeInput(props) {
 
 SizeInput.propTypes = {
   dark: PropTypes.bool,
-  label: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
+  label: PropTypes.string.isRequired,
   placeholder: PropTypes.number,
   red: PropTypes.bool,
   stock: PropTypes.number,
