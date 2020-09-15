@@ -60,6 +60,18 @@ export const Group = () => (
       placeholder={number('placeholder', '0')}
       stock={number('stock', '')}
     />
+    <SizeInput
+      dark={boolean('dark', false)}
+      label="2xl"
+      placeholder={number('placeholder', '0')}
+      stock={number('stock', '')}
+    />
+    <SizeInput
+      dark={boolean('dark', false)}
+      label="3xl"
+      placeholder={number('placeholder', '0')}
+      stock={number('stock', '')}
+    />
   </>
 )
 

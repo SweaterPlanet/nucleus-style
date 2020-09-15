@@ -13,7 +13,7 @@ const Wrapper = styled(Flex)`
 `
 
 const InputBox = styled(Flex)`
-  width: 72px;
+  width: min-content;
   height: 36px;
   background-color: ${theme.colors.paper.dark};
   margin: 0 auto;
