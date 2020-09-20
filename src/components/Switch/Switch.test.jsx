@@ -14,4 +14,10 @@ describe('Switch', () => {
     const test = mount(<Switch color={testProp} />)
     expect(test.prop('color')).toBe(testProp)
   })
+
+  it('respects the id prop', () => {
+    const testProp = 'checkbox'
+    const test = mount(<Switch id={testProp} />)
+    expect(test.prop('id')).toBe(testProp)
+  })
 })
