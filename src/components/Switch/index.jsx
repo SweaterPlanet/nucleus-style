@@ -98,12 +98,12 @@ function Switch(props) {
       <Box>
         <Input
           color={props.color}
-          id="checkbox"
+          id={props.id}
           type="checkbox"
           checked={props.checked}
           onChange={props.onChange}
         />
-        <Label htmlFor="checkbox" />
+        <Label htmlFor={props.id} />
       </Box>
     </>
   )
@@ -119,6 +119,7 @@ Switch.propTypes = {
     'red',
     'slate',
   ]),
+  id: PropTypes.string.isRequired,
 }
 
 Switch.defaultProps = {
