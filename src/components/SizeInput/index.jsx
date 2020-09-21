@@ -133,6 +133,7 @@ function SizeInput(props) {
             <Label dark={props.dark}>{props.label}</Label>
             <Input
               dark={props.dark}
+              onChange={props.onChange}
               type="number"
               placeholder={props.placeholder}
             />
@@ -154,6 +155,7 @@ function SizeInput(props) {
           <Label dark={props.dark}>{props.label}</Label>
           <Input
             dark={props.dark}
+            onChange={props.onChange}
             type="number"
             placeholder={props.placeholder}
           />
