@@ -6,7 +6,6 @@ import theme from '../../theme'
 const StyledButton = styled.button`
   font-family: ${theme.fonts.header};
   font-weight: 600;
-  color: ${props => props.color};
   border: none;
   border-radius: 8px;
   padding: 0.4em 0.6em;
@@ -147,12 +146,20 @@ ${props =>
     props.color === 'aqua' &&
     `
       color: ${theme.colors.aqua.base};
+
+      &:hover {
+        color: ${theme.colors.aqua.base};
+      }
     `}  
 
   ${props =>
     props.color === 'black' &&
     `
       color: ${theme.colors.black};
+
+      &:hover {
+        color: ${theme.colors.black};
+      }
     `} 
 
 
@@ -160,42 +167,70 @@ ${props =>
     props.color === 'blue' &&
     `
       color: ${theme.colors.blue.base};
+
+      &:hover {
+        color: ${theme.colors.blue.base};
+      }
     `}  
 
   ${props =>
     props.color === 'green' &&
     `
       color: ${theme.colors.green.base};
+
+      &:hover {
+        color: ${theme.colors.green.base};
+      }
     `}
 
   ${props =>
     props.color === 'paper' &&
     `
       color: ${theme.colors.paper.base};
+
+      &:hover {
+        color: ${theme.colors.paper.base};
+      }
     `} 
 
   ${props =>
     props.color === 'purple' &&
     `
       color: ${theme.colors.purple.base};
+
+      &:hover {
+        color: ${theme.colors.purple.base};
+      }
     `}
 
   ${props =>
     props.color === 'red' &&
     `
       color: ${theme.colors.red.base};
+
+      &:hover {
+        color: ${theme.colors.red.base};
+      }
     `} 
 
   ${props =>
     props.color === 'slate' &&
     `
       color: ${theme.colors.slate.base};
+
+      &:hover {
+        color: ${theme.colors.slate.base};
+      }
     `} 
 
   ${props =>
     props.color === 'white' &&
     `
       color: ${theme.colors.white};
+
+      &:hover {
+        color: ${theme.colors.white};
+      }
     `} 
 
   ${props =>
