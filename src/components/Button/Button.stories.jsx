@@ -15,7 +15,7 @@ export default {
   decorators: [withKnobs],
 }
 
-const colorLabel = 'Color'
+const colorLabel = 'color'
 const colorOptions = {
   aqua: 'aqua',
   black: 'black',
@@ -29,7 +29,7 @@ const colorOptions = {
 }
 const colorDefault = 'black'
 
-const bgLabel = 'Background'
+const bgLabel = 'background-color'
 const bgOptions = {
   aqua: 'aqua',
   black: 'black',
@@ -43,16 +43,25 @@ const bgOptions = {
 }
 const bgDefault = 'paper'
 
-const disabledLabel = 'Disabled'
+const disabledLabel = 'disabled'
 const disabledDefault = false
 
-const opacityLabel = 'Opacity'
-const opacityDefault = '1'
+const hrefLabel = 'href'
+const hrefDefault = ''
 
-const maxWidthLabel = 'Max Width'
+const linkLabel = 'link'
+const linkDefault = false
+
+const maxWidthLabel = 'maxWidth'
 const maxWidthDefault = false
 
-const roundLabel = 'Round'
+const onClickLabel = 'clicked'
+const onMouseOverLabel = 'hovered'
+
+const opacityLabel = 'opacity'
+const opacityDefault = '1'
+
+const roundLabel = 'round'
 const roundDefault = false
 
 const textLabel = 'Text'
@@ -63,9 +72,6 @@ const mdDefault = 'Medium'
 const lgDefault = 'Large'
 const xlDefault = 'XLarge'
 
-const onClickLabel = 'clicked'
-const onMouseOverLabel = 'hovered'
-
 export const All = () => (
   <>
     <Button
@@ -73,6 +79,8 @@ export const All = () => (
       bg={select(bgLabel, bgOptions, bgDefault)}
       color={select(colorLabel, colorOptions, colorDefault)}
       disabled={boolean(disabledLabel, disabledDefault)}
+      href={text(hrefLabel, hrefDefault)}
+      link={boolean(linkLabel, linkDefault)}
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
@@ -86,6 +94,8 @@ export const All = () => (
       bg={select(bgLabel, bgOptions, bgDefault)}
       color={select(colorLabel, colorOptions, colorDefault)}
       disabled={boolean(disabledLabel, disabledDefault)}
+      href={text(hrefLabel, hrefDefault)}
+      link={boolean(linkLabel, linkDefault)}
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
@@ -99,6 +109,8 @@ export const All = () => (
       bg={select(bgLabel, bgOptions, bgDefault)}
       color={select(colorLabel, colorOptions, colorDefault)}
       disabled={boolean(disabledLabel, disabledDefault)}
+      href={text(hrefLabel, hrefDefault)}
+      link={boolean(linkLabel, linkDefault)}
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
@@ -112,6 +124,8 @@ export const All = () => (
       bg={select(bgLabel, bgOptions, bgDefault)}
       color={select(colorLabel, colorOptions, colorDefault)}
       disabled={boolean(disabledLabel, disabledDefault)}
+      href={text(hrefLabel, hrefDefault)}
+      link={boolean(linkLabel, linkDefault)}
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
@@ -125,6 +139,8 @@ export const All = () => (
       bg={select(bgLabel, bgOptions, bgDefault)}
       color={select(colorLabel, colorOptions, colorDefault)}
       disabled={boolean(disabledLabel, disabledDefault)}
+      href={text(hrefLabel, hrefDefault)}
+      link={boolean(linkLabel, linkDefault)}
       maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
       round={boolean(roundLabel, roundDefault)}
       opacity={number(opacityLabel, opacityDefault)}
@@ -142,6 +158,8 @@ export const XS = () => (
     bg={select(bgLabel, bgOptions, bgDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
     disabled={boolean(disabledLabel, disabledDefault)}
+    href={text(hrefLabel, hrefDefault)}
+    link={boolean(linkLabel, linkDefault)}
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}
@@ -158,6 +176,8 @@ export const SM = () => (
     bg={select(bgLabel, bgOptions, bgDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
     disabled={boolean(disabledLabel, disabledDefault)}
+    href={text(hrefLabel, hrefDefault)}
+    link={boolean(linkLabel, linkDefault)}
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}
@@ -174,6 +194,8 @@ export const MD = () => (
     bg={select(bgLabel, bgOptions, bgDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
     disabled={boolean(disabledLabel, disabledDefault)}
+    href={text(hrefLabel, hrefDefault)}
+    link={boolean(linkLabel, linkDefault)}
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}
@@ -190,6 +212,8 @@ export const LG = () => (
     bg={select(bgLabel, bgOptions, bgDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
     disabled={boolean(disabledLabel, disabledDefault)}
+    href={text(hrefLabel, hrefDefault)}
+    link={boolean(linkLabel, linkDefault)}
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}
@@ -206,6 +230,8 @@ export const XL = () => (
     bg={select(bgLabel, bgOptions, bgDefault)}
     color={select(colorLabel, colorOptions, colorDefault)}
     disabled={boolean(disabledLabel, disabledDefault)}
+    href={text(hrefLabel, hrefDefault)}
+    link={boolean(linkLabel, linkDefault)}
     maxWidth={boolean(maxWidthLabel, maxWidthDefault)}
     round={boolean(roundLabel, roundDefault)}
     opacity={number(opacityLabel, opacityDefault)}

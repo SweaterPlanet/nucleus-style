@@ -47,6 +47,11 @@ describe('Button', () => {
     expect(test.prop('color')).toBe(testProp)
   })
 
+  it('respects the link prop', () => {
+    const test = shallow(<Button link />)
+    expect(test.prop('link')).toBe(true)
+  })
+
   it('respects the maxWidth prop', () => {
     const test = shallow(<Button maxWidth />)
     expect(test.prop('maxWidth')).toBe(true)

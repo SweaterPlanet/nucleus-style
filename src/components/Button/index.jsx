@@ -10,6 +10,7 @@ const StyledButton = styled.button`
   border-radius: 8px;
   padding: 0.4em 0.6em;
   opacity: ${props => props.opacity};
+  text-decoration: none;
   cursor: pointer;
 
   :disabled {
@@ -289,6 +290,24 @@ ${props =>
 `
 
 function Button(props) {
+  const link = props.link
+
+  if (link) {
+    return (
+      <StyledButton
+        as="a"
+        bg={props.bg}
+        color={props.color}
+        href={props.href}
+        opacity={props.opacity}
+        size={props.size}
+        {...props}
+      >
+        {props.children}
+      </StyledButton>
+    )
+  }
+
   return (
     <StyledButton
       bg={props.bg}
@@ -325,8 +344,10 @@ Button.propTypes = {
     'slate',
     'white',
   ]),
-  opacity: PropTypes.number,
+  href: PropTypes.string,
+  link: PropTypes.bool,
   maxWidth: PropTypes.bool,
+  opacity: PropTypes.number,
   round: PropTypes.bool,
   size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
 }
