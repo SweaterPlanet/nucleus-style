@@ -6,6 +6,7 @@ import theme from '../../theme'
 const StyledButton = styled.button`
   font-family: ${theme.fonts.header};
   font-weight: 600;
+  color: ${props => props.color};
   border: none;
   border-radius: 8px;
   padding: 0.4em 0.6em;
