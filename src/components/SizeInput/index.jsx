@@ -42,6 +42,12 @@ const Label = styled.p`
     `
      color: ${theme.colors.paper.base};
   `}
+
+  ${props =>
+    props.disabled &&
+    `
+     opacity: 50%;
+  `}
 `
 
 const Input = styled.input`
@@ -58,6 +64,11 @@ const Input = styled.input`
   height: 16px;
   margin: 8px;
   margin-right: 8px;
+
+  :disabled {
+    opacity: 50%;
+    pointer-events: none;
+  }
 
   /* Hide number input errors */
   -moz-appearance: textfield;
@@ -130,9 +141,12 @@ function SizeInput(props) {
       <>
         <Wrapper flexDirection="column">
           <InputBox dark={props.dark}>
-            <Label dark={props.dark}>{props.label}</Label>
+            <Label dark={props.dark} disabled={props.disabled}>
+              {props.label}
+            </Label>
             <Input
               dark={props.dark}
+              disabled={props.disabled}
               onChange={props.onChange}
               type="number"
               placeholder={props.placeholder}
@@ -152,9 +166,12 @@ function SizeInput(props) {
     <>
       <Wrapper flexDirection="column">
         <InputBox dark={props.dark}>
-          <Label dark={props.dark}>{props.label}</Label>
+          <Label dark={props.dark} disabled={props.disabled}>
+            {props.label}
+          </Label>
           <Input
             dark={props.dark}
+            disabled={props.disabled}
             onChange={props.onChange}
             type="number"
             placeholder={props.placeholder}
@@ -167,6 +184,7 @@ function SizeInput(props) {
 
 SizeInput.propTypes = {
   dark: PropTypes.bool,
+  disabled: PropTypes.bool,
   label: PropTypes.string.isRequired,
   placeholder: PropTypes.number,
   red: PropTypes.bool,
@@ -175,6 +193,7 @@ SizeInput.propTypes = {
 
 SizeInput.defaultProps = {
   dark: false,
+  disabled: false,
   placeholder: 0,
   red: false,
 }
