@@ -1,11 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import theme from '../../theme'
 
 import Box from '../Box'
 import Flex from '../Flex'
-import Text from '../Text'
 
 const Wrapper = styled(Flex)`
   float: left;
@@ -15,16 +14,20 @@ const Wrapper = styled(Flex)`
 const InputBox = styled(Flex)`
   width: min-content;
   height: 36px;
-  background-color: ${theme.colors.paper.dark};
+  background-color: ${props =>
+    props.dark ? `${theme.colors.slate.light}` : `${theme.colors.paper.dark}`};
   margin: 0 auto;
   position: relative;
   direction: row;
 
   ${props =>
-    props.dark &&
-    `
-     background-color: ${theme.colors.slate.light};
-  `}
+    props.disabled &&
+    css`
+      background-color: ${props =>
+        props.dark
+          ? `${theme.colors.slate.base}`
+          : `${theme.colors.paper.base}`};
+    `}
 `
 
 const Label = styled.p`
@@ -140,7 +143,7 @@ function SizeInput(props) {
     return (
       <>
         <Wrapper flexDirection="column">
-          <InputBox dark={props.dark}>
+          <InputBox dark={props.dark} disabled={props.disabled}>
             <Label dark={props.dark} disabled={props.disabled}>
               {props.label}
             </Label>
@@ -165,7 +168,7 @@ function SizeInput(props) {
   return (
     <>
       <Wrapper flexDirection="column">
-        <InputBox dark={props.dark}>
+        <InputBox dark={props.dark} disabled={props.disabled}>
           <Label dark={props.dark} disabled={props.disabled}>
             {props.label}
           </Label>
