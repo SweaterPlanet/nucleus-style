@@ -15,6 +15,12 @@ describe('SizeInput', () => {
     expect(test.prop('dark')).toBe(true)
   })
 
+  it('respects the disabled prop', () => {
+    const testProp = true
+    const test = mount(<SizeInput disabled={testProp} />)
+    expect(test.prop('disabled')).toBe(true)
+  })
+
   it('respects the label prop', () => {
     const testProp = 'xs'
     const test = mount(<SizeInput label={testProp} />)

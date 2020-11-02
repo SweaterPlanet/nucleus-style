@@ -1,11 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import theme from '../../theme'
 
 import Box from '../Box'
 import Flex from '../Flex'
-import Text from '../Text'
 
 const Wrapper = styled(Flex)`
   float: left;
@@ -15,16 +14,20 @@ const Wrapper = styled(Flex)`
 const InputBox = styled(Flex)`
   width: min-content;
   height: 36px;
-  background-color: ${theme.colors.paper.dark};
+  background-color: ${props =>
+    props.dark ? `${theme.colors.slate.light}` : `${theme.colors.paper.dark}`};
   margin: 0 auto;
   position: relative;
   direction: row;
 
   ${props =>
-    props.dark &&
-    `
-     background-color: ${theme.colors.slate.light};
-  `}
+    props.disabled &&
+    css`
+      background-color: ${props =>
+        props.dark
+          ? `${theme.colors.slate.base}`
+          : `${theme.colors.paper.base}`};
+    `}
 `
 
 const Label = styled.p`
@@ -42,6 +45,12 @@ const Label = styled.p`
     `
      color: ${theme.colors.paper.base};
   `}
+
+  ${props =>
+    props.disabled &&
+    `
+     opacity: 50%;
+  `}
 `
 
 const Input = styled.input`
@@ -58,6 +67,11 @@ const Input = styled.input`
   height: 16px;
   margin: 8px;
   margin-right: 8px;
+
+  :disabled {
+    opacity: 50%;
+    pointer-events: none;
+  }
 
   /* Hide number input errors */
   -moz-appearance: textfield;
@@ -125,14 +139,17 @@ const Caption = styled.p`
 `
 
 function SizeInput(props) {
-  if (props.stock) {
+  if (props.stock || props.stock == 0) {
     return (
       <>
         <Wrapper flexDirection="column">
-          <InputBox dark={props.dark}>
-            <Label dark={props.dark}>{props.label}</Label>
+          <InputBox dark={props.dark} disabled={props.disabled}>
+            <Label dark={props.dark} disabled={props.disabled}>
+              {props.label}
+            </Label>
             <Input
               dark={props.dark}
+              disabled={props.disabled}
               onChange={props.onChange}
               type="number"
               placeholder={props.placeholder}
@@ -151,10 +168,13 @@ function SizeInput(props) {
   return (
     <>
       <Wrapper flexDirection="column">
-        <InputBox dark={props.dark}>
-          <Label dark={props.dark}>{props.label}</Label>
+        <InputBox dark={props.dark} disabled={props.disabled}>
+          <Label dark={props.dark} disabled={props.disabled}>
+            {props.label}
+          </Label>
           <Input
             dark={props.dark}
+            disabled={props.disabled}
             onChange={props.onChange}
             type="number"
             placeholder={props.placeholder}
@@ -167,6 +187,7 @@ function SizeInput(props) {
 
 SizeInput.propTypes = {
   dark: PropTypes.bool,
+  disabled: PropTypes.bool,
   label: PropTypes.string.isRequired,
   placeholder: PropTypes.number,
   red: PropTypes.bool,
@@ -175,6 +196,7 @@ SizeInput.propTypes = {
 
 SizeInput.defaultProps = {
   dark: false,
+  disabled: false,
   placeholder: 0,
   red: false,
 }

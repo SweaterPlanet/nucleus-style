@@ -11,6 +11,7 @@ export default {
 export const Default = () => (
   <SizeInput
     dark={boolean('dark', false)}
+    disabled={boolean('disabled', false)}
     label={text('label', 'xs')}
     placeholder={number('placeholder', '0')}
     red={boolean('red', false)}
@@ -21,6 +22,7 @@ export const Default = () => (
 export const Dark = () => (
   <SizeInput
     dark={boolean('dark', true)}
+    disabled={boolean('disabled', false)}
     label={text('label', 'xs')}
     placeholder={number('placeholder', '0')}
     red={boolean('red', false)}
@@ -32,42 +34,49 @@ export const Group = () => (
   <>
     <SizeInput
       dark={boolean('dark', false)}
+      disabled={boolean('disabled', false)}
       label="xs"
       placeholder={number('placeholder', '0')}
       stock={number('stock', '')}
     />
     <SizeInput
       dark={boolean('dark', false)}
+      disabled={boolean('disabled', false)}
       label="sm"
       placeholder={number('placeholder', '0')}
       stock={number('stock', '')}
     />
     <SizeInput
       dark={boolean('dark', false)}
+      disabled={boolean('disabled', false)}
       label="md"
       placeholder={number('placeholder', '0')}
       stock={number('stock', '')}
     />
     <SizeInput
       dark={boolean('dark', false)}
+      disabled={boolean('disabled', false)}
       label="lg"
       placeholder={number('placeholder', '0')}
       stock={number('stock', '')}
     />
     <SizeInput
       dark={boolean('dark', false)}
+      disabled={boolean('disabled', false)}
       label="xl"
       placeholder={number('placeholder', '0')}
       stock={number('stock', '')}
     />
     <SizeInput
       dark={boolean('dark', false)}
+      disabled={boolean('disabled', false)}
       label="2xl"
       placeholder={number('placeholder', '0')}
       stock={number('stock', '')}
     />
     <SizeInput
       dark={boolean('dark', false)}
+      disabled={boolean('disabled', false)}
       label="3xl"
       placeholder={number('placeholder', '0')}
       stock={number('stock', '')}
@@ -78,6 +87,7 @@ export const Group = () => (
 export const Caption = () => (
   <SizeInput
     dark={boolean('dark', false)}
+    disabled={boolean('disabled', false)}
     label={text('label', 'xs')}
     placeholder={number('placeholder', '0')}
     red={boolean('red', true)}
