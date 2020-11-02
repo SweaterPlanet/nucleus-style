@@ -139,7 +139,7 @@ const Caption = styled.p`
 `
 
 function SizeInput(props) {
-  if (props.stock) {
+  if (props.stock || props.stock == 0) {
     return (
       <>
         <Wrapper flexDirection="column">
