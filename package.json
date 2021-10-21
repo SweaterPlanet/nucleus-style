@@ -1,5 +1,5 @@
 {
-  "name": "@thesweaterguys/nucleus-style",
+  "name": "@sweaterplanet/nucleus-style",
   "version": "1.4.0",
   "description": "React component library for The Sweater Guys",
   "main": "dist/index.js",
