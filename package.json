@@ -25,15 +25,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheSweaterGuys/nucleus-style.git"
+    "url": "git+https://github.com/SweaterPlanet/nucleus-style.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TheSweaterGuys/nucleus-style/issues"
+    "url": "https://github.com/SweaterPlanet/nucleus-style/issues"
   },
-  "homepage": "https://github.com/TheSweaterGuys/nucleus-style#readme",
+  "homepage": "https://github.com/SweaterPlanet/nucleus-style#readme",
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
