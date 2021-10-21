@@ -44,7 +44,7 @@ const Input = styled.input`
       props.color === 'aqua' &&
       `
       background: ${theme.colors.aqua.base};
-    `}  
+    `}
 
     ${props =>
       props.color === 'black' &&

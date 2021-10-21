@@ -6,14 +6,14 @@ const H2 = styled.h2`
   font-family: ${theme.fonts.header};
   font-size: ${theme.fontSizes.h2.xs};
   font-weight: 400;
-	margin: 0;
+  margin: 0;
   opacity: ${props => props.opacity};
 
   ${props =>
     props.color === 'aqua' &&
     `
       color: ${theme.colors.aqua.base};
-    `}  
+    `}
 
   ${props =>
     props.color === 'black' &&

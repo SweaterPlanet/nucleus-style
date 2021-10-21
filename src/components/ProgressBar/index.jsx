@@ -18,12 +18,12 @@ const Bar = styled.div`
 const Meter = styled.div`
   width: ${props => props.value}%;
   height: 8px;
-  
-	${props =>
+
+  ${props =>
     props.color === 'aqua' &&
     `
       background-color: ${theme.colors.aqua.base};
-    `}  
+    `}
 
   ${props =>
     props.color === 'black' &&
@@ -72,7 +72,7 @@ const Meter = styled.div`
     props.color === 'white' &&
     `
       background-color: ${theme.colors.white};
-    `} 
+    `}
 `
 
 function ProgressBar(props) {

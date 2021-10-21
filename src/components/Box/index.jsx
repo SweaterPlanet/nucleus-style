@@ -40,7 +40,7 @@ export const StyledBox = styled.div`
     props.color === 'aqua' &&
     `
       color: ${theme.colors.aqua.base};
-    `}  
+    `}
 
   ${props =>
     props.color === 'black' &&
@@ -144,7 +144,7 @@ export const StyledBox = styled.div`
     props.bg === 'white' &&
     `
       background-color: ${theme.colors.white};
-    `} 
+    `}
 `
 
 function Box(props) {
