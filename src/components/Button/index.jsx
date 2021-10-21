@@ -70,7 +70,7 @@ const StyledButton = styled.button`
     }
   `}
 
-${props => 
+${props =>
   props.size === 'md' &&
   `
     font-size: ${theme.fontSizes.h3.xs}
