@@ -59,3 +59,4 @@ See the [contributing guide](https://github.com/TheSweaterGuys/nucleus-style/blo
 **@owner:** [The Sweater Guys inc.](https://github.com/sweaterguys)
 
 **@author:** [Loreina Chew](https://github.com/loreina)
+
