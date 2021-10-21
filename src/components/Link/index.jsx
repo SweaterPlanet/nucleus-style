@@ -213,7 +213,7 @@ export const StyledLink = styled.a`
       &:hover {
         color: ${theme.colors.paper.base};
       }
-    `} 
+    `}
 `
 
 function Link(props) {
