@@ -70,9 +70,9 @@ const StyledButton = styled.button`
     }
   `}
 
-${props =>
-    props.size === 'md' &&
-    `
+${props => 
+  props.size === 'md' &&
+  `
     font-size: ${theme.fontSizes.h3.xs}
 
     @media (min-width: ${theme.screens.sm}) {
@@ -93,8 +93,8 @@ ${props =>
   `}
 
 ${props =>
-    props.size === 'lg' &&
-    `
+  props.size === 'lg' &&
+  `
     font-size: ${theme.fontSizes.h2.xs}
 
     @media (min-width: ${theme.screens.sm}) {
@@ -115,8 +115,8 @@ ${props =>
   `}
 
 ${props =>
-    props.size === 'xl' &&
-    `
+  props.size === 'xl' &&
+  `
     font-size: ${theme.fontSizes.h1.xs}
 
     @media (min-width: ${theme.screens.sm}) {
