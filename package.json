@@ -1,6 +1,6 @@
 {
   "name": "@sweaterplanet/nucleus-style",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "React component library for The Sweater Guys",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -78,7 +78,7 @@
   },
   "engines": {
     "node": "16.x",
-    "npm": "6.x"
+    "npm": "8.x"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
