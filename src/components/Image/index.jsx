@@ -29,7 +29,7 @@ export const StyledImage = styled(Box)`
         width: ${props => props.width};
         height: ${props => props.width};
       `}
-  `
+`
 
 function Image(props) {
   return (

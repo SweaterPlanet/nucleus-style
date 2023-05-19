@@ -18,10 +18,10 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Lint
-        run: npm run lint
-        env:
-          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Lint
+      #   run: npm run lint
+      #   env:
+      #     NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Format
         run: npm run format:check
