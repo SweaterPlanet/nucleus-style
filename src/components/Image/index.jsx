@@ -24,12 +24,12 @@ export const StyledImage = styled(Box)`
     `}
 
     ${props =>
-      props.square &&
-      css`
-        width: ${props => props.width};
-        height: ${props => props.width};
-      `}
-  `
+    props.square &&
+    css`
+      width: ${props => props.width};
+      height: ${props => props.width};
+    `}
+`
 
 function Image(props) {
   return (
