@@ -17,12 +17,20 @@ const blue = {
   darker: '#0D3859',
 }
 
+// const green = {
+//   lighter: '#D6F5DF',
+//   light: '#ADEBBE',
+//   base: '#5ED47F',
+//   dark: '#28A44B',
+//   darker: '#145225',
+// }
+
 const green = {
-  lighter: '#D6F5DF',
-  light: '#ADEBBE',
-  base: '#5ED47F',
-  dark: '#28A44B',
-  darker: '#145225',
+  lighter: '#008080',
+  light: '#008080',
+  base: '#008080',
+  dark: '#008080',
+  darker: '#008080',
 }
 
 const paper = {
