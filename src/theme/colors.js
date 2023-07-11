@@ -17,6 +17,14 @@ const blue = {
   darker: '#0D3859',
 }
 
+// const green = {
+//   lighter: '#D6F5DF',
+//   light: '#ADEBBE',
+//   base: '#5ED47F',
+//   dark: '#28A44B',
+//   darker: '#145225',
+// }
+
 const green = {
   lighter: '#008080',
   light: '#008080',
