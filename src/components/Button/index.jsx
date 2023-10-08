@@ -8,10 +8,11 @@ const StyledButton = styled.button`
   font-weight: 600;
   border: none;
   border-radius: 8px;
-  padding: 0.4em 0.6em;
+  padding: 0.8em 1em;
   opacity: ${props => props.opacity};
   text-decoration: none;
   cursor: pointer;
+  font-size: ${theme.fontSizes.p.md};
 
   :disabled {
     color: ${props => theme.colors[props.color].light};
@@ -23,7 +24,7 @@ const StyledButton = styled.button`
     props.round &&
     `
     border-radius: 2em;
-    padding: 0.4em 0.8em;
+    padding: 0.6em 1em;
   `}
 
   ${props =>
