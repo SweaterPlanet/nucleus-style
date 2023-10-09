@@ -8,7 +8,7 @@ const StyledButton = styled.button`
   font-weight: 600;
   border: none;
   border-radius: 8px;
-  padding: 0.8em 1em;
+  padding: 0.6em 0.6em;
   opacity: ${props => props.opacity};
   text-decoration: none;
   cursor: pointer;
